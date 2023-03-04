@@ -1,0 +1,21 @@
+$themeColor: rgba(237, 176, 45, 0.752);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Labrada", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import "./nav";
+@import "./footer";
+@import "./homepage";
+@import "./pfp";
+@import "./art";
+@import "animate.css";

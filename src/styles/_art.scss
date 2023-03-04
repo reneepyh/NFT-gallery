@@ -1,0 +1,791 @@
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.artPage {
+  background-color: rgb(222, 214, 214);
+  color: rgb(10, 39, 11);
+  a {
+    color: rgb(10, 39, 11);
+  }
+}
+
+#artLandingPage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: default;
+  color: rgb(82, 55, 32);
+  .artTitile {
+    flex: 4 1;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 92vh;
+    padding: 4rem 1rem 0rem 3rem;
+    h2 {
+      font-size: 5rem;
+    }
+    .artIntro {
+      font-size: 1.6rem;
+      p {
+        padding-right: 7rem;
+        font-family: "IBM Plex Serif", serif;
+        margin-bottom: 2rem;
+        text-align: justify;
+      }
+    }
+    .TAOSTop {
+      align-self: flex-end;
+      margin-top: 33vh;
+      a {
+        display: flex;
+        align-items: flex-end;
+        font-family: "IBM Plex Serif", serif;
+        text-decoration: none;
+        color: rgb(82, 55, 32);
+        span {
+          margin: 0.3rem;
+        }
+      }
+    }
+  }
+  .TAOSPic {
+    flex: 3 1;
+    img {
+      max-height: 92vh;
+      border-radius: 30%;
+      padding: 1rem 3rem 2rem 1rem;
+    }
+  }
+}
+
+#dreamer {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  cursor: default;
+  .dreamerPic {
+    flex: 3 1;
+    padding: 1rem;
+    img {
+      max-height: 85vh;
+      border-radius: 30%;
+      padding-top: 1.5rem;
+    }
+  }
+  .dreamerIntro {
+    flex: 4 1;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 8rem;
+      font-size: 1.3rem;
+      text-align: justify;
+      padding-top: 2rem;
+    }
+    a {
+      font-family: "IBM Plex Serif", serif;
+      align-self: flex-start;
+    }
+    .dreamerOSLink {
+      margin-top: 52vh;
+    }
+  }
+}
+
+#COH {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  cursor: default;
+  .cohIntro {
+    flex: 5 1;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 12rem;
+      font-size: 1.3rem;
+      text-align: justify;
+      padding-top: 2rem;
+    }
+    a {
+      font-family: "IBM Plex Serif", serif;
+      align-self: flex-end;
+      img {
+        height: 24px;
+        border-radius: 50%;
+      }
+    }
+    .cohLink {
+      margin-top: 60vh;
+    }
+  }
+  .cohPic {
+    flex: 4 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    img {
+      max-height: 85vh;
+      border-radius: 30%;
+      padding-top: 1.5rem;
+    }
+  }
+}
+
+#DR {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  cursor: default;
+  .drPic {
+    flex: 3 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    img {
+      max-height: 85vh;
+      border-radius: 30%;
+      padding-top: 1.5rem;
+    }
+  }
+  .drIntro {
+    min-height: 100vh;
+    flex: 4 1;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 8rem;
+      font-size: 1.3rem;
+      text-align: justify;
+      padding-top: 2rem;
+    }
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      align-self: flex-start;
+      span {
+        margin: 0.3rem;
+      }
+    }
+    .drOSLink {
+      margin-top: 35vh;
+    }
+  }
+}
+
+#TAOS {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: default;
+  .taosIntro {
+    flex: 2 1;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      font-size: 1.2rem;
+      text-align: justify;
+      padding-top: 2rem;
+    }
+  }
+  .seasons9623 {
+    flex: 3 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      display: flex;
+      align-self: flex-start;
+      span {
+        margin-right: 0.3rem;
+      }
+    }
+    img {
+      max-height: 85vh;
+      max-width: 32vw;
+      border-radius: 30%;
+      padding: 1.5rem;
+    }
+  }
+  .seasons9415 {
+    flex: 3 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      display: flex;
+      align-self: flex-start;
+      span {
+        margin-right: 0.3rem;
+      }
+    }
+    img {
+      max-height: 85vh;
+      max-width: 32vw;
+      border-radius: 30%;
+      padding: 1.5rem;
+    }
+  }
+}
+
+#lofiLoft {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: default;
+  .lofi4652 {
+    flex: 3 1;
+    display: flex;
+    flex-direction: column;
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      display: flex;
+      align-self: flex-start;
+      span {
+        margin-right: 0.3rem;
+      }
+    }
+    img {
+      max-height: 85vh;
+      max-width: 35vw;
+      border-radius: 30%;
+      padding: 1.5rem;
+    }
+  }
+  .lofi895 {
+    flex: 3 1;
+    display: flex;
+    flex-direction: column;
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      display: flex;
+      align-self: flex-start;
+      span {
+        margin-right: 0.3rem;
+      }
+    }
+    img {
+      max-height: 85vh;
+      max-width: 35vw;
+      border-radius: 30%;
+      padding: 1.5rem;
+    }
+  }
+  .lofiIntro {
+    flex: 5 1;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      font-size: 1.3rem;
+      text-align: justify;
+      padding-top: 2rem;
+    }
+  }
+}
+
+#longlong {
+  cursor: default;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  .longlongIntro {
+    flex: 6 1;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      font-size: 1.2rem;
+      text-align: justify;
+      padding-top: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  .longlong {
+    flex: 2 1;
+    display: flex;
+    align-items: flex-end;
+    img {
+      max-width: 19vw;
+      border-radius: 30%;
+    }
+    padding: 1rem;
+  }
+}
+
+#mek {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  cursor: default;
+  .mekPic {
+    flex: 3 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    img {
+      max-height: 85vh;
+      border-radius: 30%;
+      padding-top: 1.5rem;
+    }
+  }
+  .mekIntro {
+    flex: 4 1;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 12rem;
+      font-size: 1.3rem;
+      text-align: justify;
+      padding-top: 2rem;
+    }
+    a {
+      align-self: flex-start;
+      img {
+        height: 24px;
+        border-radius: 50%;
+      }
+    }
+    .mekLink {
+      margin-top: 56vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #artLandingPage {
+    .artTitile {
+      flex: 2 1 500px;
+    }
+    .TAOSPic {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+  }
+
+  #dreamer {
+    flex-wrap: wrap-reverse;
+    .dreamerPic {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+    .dreamerIntro {
+      flex: 4 1 500px;
+      justify-content: space-around;
+      .dreamerOSLink {
+        margin-top: 8vh;
+      }
+    }
+  }
+
+  #COH {
+    .cohIntro {
+      padding: 1rem 3rem;
+      flex: 1 1 500px;
+      justify-content: space-around;
+      .cohLink {
+        align-self: flex-start;
+        margin-top: 8vh;
+      }
+    }
+    .cohPic {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+  }
+
+  #DR {
+    flex-wrap: wrap-reverse;
+    .drPic {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+    .drIntro {
+      flex: 4 1 500px;
+      justify-content: space-around;
+      min-height: 60vh;
+      .drOSLink {
+        margin-top: 8vh;
+      }
+    }
+  }
+
+  #TAOS {
+    .taosIntro {
+      padding: 1rem 3rem;
+      flex: 1 1 800px;
+      justify-content: space-around;
+    }
+    .seasons9623 {
+      flex: 3 1;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        max-width: 50vw;
+      }
+    }
+    .seasons9415 {
+      flex: 3 1;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        max-width: 50vw;
+      }
+    }
+  }
+
+  #lofiLoft {
+    flex-wrap: wrap-reverse;
+    .lofiIntro {
+      padding: 1rem 3rem;
+      flex: 5 1 800px;
+      justify-content: space-around;
+    }
+    .lofi4652 {
+      flex: 3 1;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        max-width: 50vw;
+      }
+    }
+    .lofi895 {
+      flex: 3 1;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        max-width: 50vw;
+      }
+    }
+  }
+
+  #mek {
+    flex-wrap: wrap-reverse;
+    .mekPic {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+    .mekIntro {
+      flex: 4 1 500px;
+      justify-content: space-around;
+      min-height: 40vh;
+      .mekLink {
+        margin-top: 8vh;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #artLandingPage {
+    .artTitile {
+      min-height: 70vh;
+      padding: 2rem 1rem 0rem 3rem;
+      justify-content: space-around;
+      .TAOSTop {
+        align-self: flex-start;
+        margin-top: 2vh;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #artLandingPage {
+    .artTitile {
+      padding: 1.5rem 1rem 0rem 3rem;
+      h2 {
+        font-size: 3rem;
+      }
+      .artIntro {
+        font-size: 1.2rem;
+        p {
+          padding-right: 3rem;
+        }
+      }
+    }
+    .TAOSPic {
+      img {
+        width: 60vw;
+      }
+    }
+  }
+
+  #dreamer {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .dreamerPic {
+      padding: 0rem;
+      img {
+        width: 60vw;
+        padding-top: 0rem;
+      }
+    }
+    .dreamerIntro {
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+
+  #COH {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .cohIntro {
+      min-height: 30vh;
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+    .cohPic {
+      padding: 0rem;
+      img {
+        width: 60vw;
+        padding-top: 0rem;
+      }
+    }
+  }
+
+  #DR {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .drPic {
+      padding: 0rem;
+      img {
+        width: 60vw;
+        padding-top: 0rem;
+      }
+    }
+    .drIntro {
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+
+  #TAOS {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .taosIntro {
+      min-height: 25vh;
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+    .seasons9623 {
+      padding: 0rem;
+      img {
+        width: 60vw;
+        padding-top: 0rem;
+      }
+    }
+    .seasons9415 {
+      padding: 0rem;
+      img {
+        width: 60vw;
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  #lofiLoft {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .lofiIntro {
+      min-height: 25vh;
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+    .lofi895 {
+      padding: 0rem;
+      img {
+        width: 60vw;
+        padding-top: 0rem;
+      }
+    }
+    .lofi4652 {
+      padding: 0rem;
+      img {
+        width: 60vw;
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  #longlong {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .longlongIntro {
+      min-height: 20vh;
+      padding: 0rem 1.5rem;
+      flex: 6 1 800px;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+    .longlong {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      padding: 1rem;
+      align-items: flex-end;
+      img {
+        max-width: 40vw;
+      }
+    }
+  }
+
+  #mek {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .mekPic {
+      padding: 0rem 0rem 2rem 0rem;
+      img {
+        width: 60vw;
+        padding-top: 0rem;
+      }
+    }
+    .mekIntro {
+      padding: 0rem 1.5rem;
+      min-height: 20vh;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+}

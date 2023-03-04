@@ -1,0 +1,455 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+section {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes typewriterOne {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typewriterTwo {
+  from {
+    width: 0;
+  }
+  to {
+    width: 66%;
+  }
+}
+@keyframes typewriterThree {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkTextCursorOne {
+  from {
+    border-right-color: $themeColor;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@keyframes blinkTextCursorTwo {
+  from {
+    border-right: solid $themeColor;
+  }
+  to {
+    border-right: transparent;
+  }
+}
+@keyframes blinkTextCursorThree {
+  from {
+    border-right: solid rgb(48, 46, 46);
+  }
+  to {
+    border-right: transparent;
+  }
+}
+
+.landingPage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  color: rgb(48, 46, 46);
+  min-height: 92vh;
+  div.intro {
+    flex: 3 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 6vh;
+    padding-left: 7.5vw;
+    min-height: 92vh;
+    div.title {
+      cursor: default;
+    }
+    .titleLineOne {
+      color: $themeColor;
+      font-size: 4rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+      white-space: nowrap;
+      border-right: solid $themeColor;
+      overflow: hidden;
+      animation: typewriterOne 2.3s steps(25) 0.5s 1 normal both,
+        blinkTextCursorOne 900ms steps(25) 4 forwards;
+    }
+    div.title .titleLineTwo {
+      color: $themeColor;
+      font-size: 4rem;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typewriterTwo 1.5s steps(17) 3s 1 normal both,
+        blinkTextCursorTwo 900ms steps(17) 3s 3 forwards;
+    }
+    .selfIntro {
+      h2 {
+        cursor: default;
+        color: rgb(48, 46, 46);
+        font-size: 1.8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typewriterThree 2.2s steps(22) 6s 1 normal both,
+          blinkTextCursorThree 900ms steps(22) 6s infinite normal;
+      }
+    }
+    #featureButton {
+      align-self: flex-end;
+      margin-right: 10vw;
+      text-decoration: none;
+      color: rgb(248, 245, 242);
+      font-size: 1.2rem;
+      background-color: $themeColor;
+      padding: 16px 32px;
+      border-radius: 40px;
+      letter-spacing: 0.1rem;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: rgb(48, 46, 46);
+      }
+    }
+    .dreamerOS {
+      height: auto;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      align-self: flex-end;
+      margin-bottom: 7vh;
+      a {
+        text-decoration: none;
+        color: rgb(48, 46, 46);
+      }
+    }
+  }
+  div.dreamerImg {
+    flex: 2 1;
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    img {
+      height: 85vh;
+      animation: fadeInDown 2s;
+    }
+  }
+}
+
+.slideshow {
+  padding: 1rem 0rem;
+  background-color: rgb(199, 208, 186, 0.5);
+  min-height: 100vh;
+  cursor: default;
+  .slide-effect {
+    .slideContainer {
+      padding: 5rem 2rem 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      min-height: 90vh;
+      justify-content: center;
+      h2 {
+        flex: 2.5 1;
+        letter-spacing: 0.2rem;
+        font-size: 3rem;
+        color: rgb(135, 67, 2);
+        text-align: left;
+        padding-left: 2rem;
+      }
+      .slideImg {
+        flex: 4 1 589.2px;
+        align-self: flex-end;
+        display: flex;
+        flex-wrap: wrap;
+        img {
+          flex: 0 0 589.2px;
+          height: 78vh;
+          width: 100%;
+          border-radius: 30%;
+          object-fit: cover;
+          object-position: center center;
+          opacity: 0.9;
+          animation-delay: 0.8s;
+          margin-left: 3rem;
+        }
+      }
+      .featureCaption {
+        height: auto;
+        width: auto;
+        flex: 18 1;
+        align-self: flex-end;
+        a {
+          text-decoration: none;
+        }
+        svg {
+          animation-delay: 0.8s;
+        }
+        img {
+          animation-delay: 0.8s;
+          height: 24px;
+          border-radius: 50%;
+        }
+        p {
+          color: #7e6301;
+          font-size: 1.7rem;
+          animation-delay: 0.8s;
+        }
+      }
+    }
+  }
+}
+
+.basics {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: rgb(63, 63, 116);
+  min-height: 100vh;
+  #stitchingFissures {
+    flex: 3 1;
+    align-self: flex-start;
+    max-height: 90vh;
+    max-width: 40vw;
+    margin-top: 8vh;
+  }
+  .nftIntro {
+    flex: 4 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5rem 10rem 0.5rem 5rem;
+    cursor: default;
+    h2 {
+      flex: 1 1;
+      letter-spacing: 0.2rem;
+      font-size: 3rem;
+      color: $themeColor;
+      animation-delay: 1s;
+    }
+    p {
+      padding-right: 7rem;
+      font-family: "IBM Plex Serif", serif;
+      flex: 6 1;
+      color: rgb(240, 236, 224);
+      font-size: 1.5rem;
+      text-align: justify;
+      animation-delay: 1.5s;
+      padding-top: 1.5rem;
+    }
+    .mekOS {
+      flex: 1 1;
+      align-self: flex-start;
+      height: auto;
+      width: auto;
+      a {
+        text-decoration: none;
+        font-size: 1rem;
+      }
+      img {
+        border-radius: 50%;
+        margin-top: 6rem;
+        height: 24px;
+      }
+      .basicsCaption {
+        font-family: "Labrada", sans-serif;
+        font-size: 1rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1466px) {
+  #landingPage {
+    .dreamerImg {
+      img {
+        height: 50vh;
+        animation: fadeInDown 0s;
+      }
+    }
+    .intro {
+      justify-content: space-evenly;
+    }
+    .dreamerOS {
+      flex-direction: row;
+      margin-bottom: 0vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #feature {
+    .slide-effect .slideContainer .slideImg {
+      flex: 4 1 430px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        flex: 0 0 430px;
+        height: 65vh;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  #landingPage {
+    .dreamerOS {
+      align-self: flex-start;
+    }
+    .dreamerImg {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  #feature {
+    .slide-effect .slideContainer {
+      .slideImg {
+        flex: 4 1 400px;
+        img {
+          flex: 0 0 400px;
+          height: 55vh;
+          margin-left: 1rem;
+        }
+      }
+    }
+    .featureCaption {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  #basics {
+    #stitchingFissures {
+      max-height: 60vh;
+      max-width: 70vw;
+    }
+    .nftIntro {
+      flex: 4 1 550px;
+      padding: 5rem 2rem 0.5rem 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #landingPage {
+    .intro .title .titleLineOne {
+      animation: none;
+      overflow: auto;
+      white-space: normal;
+      font-size: 2.5rem;
+      border-right: none;
+    }
+    .intro .title .titleLineTwo {
+      animation: none;
+      overflow: auto;
+      white-space: normal;
+      font-size: 2.5rem;
+      border-right: none;
+    }
+    div.intro {
+      h2 {
+        animation: none;
+        overflow: auto;
+        white-space: normal;
+        font-size: 1.3rem;
+        border-right: none;
+      }
+      #featureButton {
+        animation: none;
+        align-self: flex-start;
+        font-size: 1rem;
+      }
+      .dreamerOS {
+        animation: none;
+      }
+      .dreamerCaption {
+        animation: none;
+      }
+    }
+    .dreamerImg {
+      #dreamerImg {
+        height: 40vh;
+        max-width: 95vw;
+        animation: none;
+      }
+    }
+  }
+  #feature {
+    .slide-effect .slideContainer {
+      h2 {
+        padding-left: 1rem;
+        font-size: 2rem;
+      }
+      .slideImg {
+        flex: 4 1 460px;
+        align-self: flex-start;
+        img {
+          flex: 0 0 260px;
+          height: 35vh;
+          animation: none;
+          margin: 0;
+        }
+      }
+      .featureCaption {
+        flex: 18 1 220px;
+        align-self: flex-start;
+        svg {
+          animation: none;
+        }
+        img {
+          animation: none;
+        }
+        p {
+          animation: none;
+        }
+      }
+    }
+  }
+  #basics {
+    #stitchingFissures {
+      max-height: 60vh;
+      max-width: 90vw;
+    }
+    .nftIntro {
+      padding: 5rem 2rem 0.5rem 2rem;
+      h2 {
+        font-size: 2rem;
+        animation: none;
+      }
+      p {
+        padding-right: 1rem;
+        font-size: 1.2rem;
+        animation: none;
+      }
+      .mekOS {
+        .basicsCaption {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1029 @@
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.pfpPage {
+  color: #343644;
+  a {
+    color: #343644;
+  }
+}
+
+#pfpLandingPage {
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  cursor: default;
+  color: rgb(18, 45, 25);
+  .pfpTitile {
+    flex: 2 1;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 92vh;
+    padding: 4rem 1rem 2rem 3rem;
+    h2 {
+      font-size: 5rem;
+    }
+    .pfpIntro {
+      font-size: 1.6rem;
+      p {
+        margin-bottom: 2rem;
+        text-align: justify;
+        padding-right: 5rem;
+        font-family: "IBM Plex Serif", serif;
+      }
+    }
+    .ivyCaption {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+      margin-top: 27vh;
+      a {
+        font-family: "IBM Plex Serif", serif;
+        text-decoration: none;
+        color: rgb(18, 45, 25);
+        span {
+          margin: 0.3rem;
+        }
+      }
+    }
+  }
+  .ivyPic {
+    flex: 1 1;
+    img {
+      max-height: 90vh;
+      max-width: 80vw;
+    }
+  }
+}
+
+#KPK {
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  cursor: default;
+  .KPKPiano {
+    flex: 3 1;
+    padding: 1rem;
+    img {
+      max-height: 78vh;
+      border-radius: 50%;
+    }
+  }
+  .KPKIntro {
+    flex: 4 1;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.3rem;
+      text-align: justify;
+      padding-top: 2rem;
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 8rem;
+    }
+    a {
+      text-decoration: none;
+      align-self: flex-start;
+      font-family: "IBM Plex Serif", serif;
+      p {
+        font-size: 1rem;
+      }
+    }
+    .kpkOS {
+      margin-top: 32vh;
+      span {
+        margin: 0.3rem;
+      }
+    }
+  }
+}
+
+#klonesAncestor {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  h2 {
+    font-size: 3rem;
+  }
+  .ancestor {
+    padding: 1rem;
+    img {
+      max-width: 21vw;
+      border-radius: 50%;
+    }
+  }
+}
+
+#BBRC {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  .ivyGirl {
+    flex: 3 1;
+    padding: 1rem;
+    img {
+      max-height: 82vh;
+    }
+  }
+  .BBRCIntro {
+    flex: 4 1;
+    padding: 3rem 3rem 0 0;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      text-align: justify;
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 12rem;
+    }
+    a {
+      text-decoration: none;
+      align-self: flex-start;
+      font-family: "IBM Plex Serif", serif;
+      p {
+        font-size: 1rem;
+      }
+    }
+    .bbrcOS {
+      margin-top: 38vh;
+      span {
+        margin: 0.3rem;
+      }
+    }
+  }
+}
+
+#whimsySisters {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: space-evenly;
+  .wsIntro {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.3rem;
+      text-align: justify;
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 8rem;
+      padding-top: 1rem;
+    }
+    img {
+      align-self: flex-end;
+      max-width: 25vw;
+      border-radius: 50%;
+      padding: 1rem 0 0 0;
+    }
+    a {
+      text-decoration: none;
+      align-self: flex-end;
+    }
+  }
+  .wsPics {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    img {
+      max-height: 80vh;
+      border-radius: 50%;
+    }
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      align-self: flex-end;
+      span {
+        margin-right: 0.3rem;
+      }
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+#bwople {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  .bw117 {
+    flex: 3 1;
+    padding: 1rem;
+    img {
+      max-height: 75vh;
+      border-radius: 50%;
+    }
+  }
+  .bwIntro {
+    flex: 4 1;
+    padding: 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 8rem;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      text-align: justify;
+    }
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      align-self: flex-start;
+      p {
+        font-size: 1rem;
+      }
+      img {
+        height: 24px;
+        border-radius: 50%;
+      }
+    }
+    .bwLink {
+      margin-top: 35vh;
+      img {
+        margin: 0.3rem;
+      }
+    }
+  }
+}
+
+#lucid {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  .lucidIntro {
+    flex: 1 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 10rem;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      text-align: justify;
+    }
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      align-self: flex-end;
+      p {
+        font-size: 1rem;
+      }
+      img {
+        height: 24px;
+        border-radius: 50%;
+      }
+    }
+    .lucidOS {
+      margin-top: 47vh;
+      span {
+        margin: 0.3rem;
+      }
+    }
+  }
+  .lucidPic {
+    flex: 1 1;
+    padding: 1rem;
+    img {
+      max-height: 80vh;
+      border-radius: 50%;
+    }
+  }
+}
+
+#vivid {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  .vividPic {
+    flex: 3 1;
+    padding: 1rem;
+    img {
+      max-height: 75vh;
+      border-radius: 50%;
+    }
+  }
+  .vividIntro {
+    flex: 4 1;
+    padding: 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 8rem;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      text-align: justify;
+    }
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      align-self: flex-start;
+      p {
+        font-size: 1rem;
+      }
+      img {
+        height: 24px;
+        border-radius: 50%;
+      }
+    }
+    .vividLink {
+      margin-top: 41vh;
+      span {
+        margin: 0.3rem;
+      }
+    }
+  }
+}
+
+#catgirl {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  .catgirlIntro {
+    flex: 1 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 10rem;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      text-align: justify;
+    }
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      align-self: flex-end;
+      p {
+        font-size: 1rem;
+      }
+      img {
+        height: 24px;
+        border-radius: 50%;
+      }
+    }
+    .catgirlOS {
+      margin-top: 42vh;
+      span {
+        margin: 0.3rem;
+      }
+    }
+  }
+  .catgirlPic {
+    flex: 1 1;
+    padding: 1rem;
+    img {
+      max-height: 80vh;
+      border-radius: 50%;
+    }
+  }
+}
+
+#humankind {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: space-evenly;
+  .hkPics {
+    flex: 2 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    img {
+      max-height: 80vh;
+    }
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      align-self: flex-end;
+      padding-right: 2rem;
+      margin-top: 1.5rem;
+      span {
+        margin: 0.3rem;
+      }
+    }
+    p {
+      font-size: 1rem;
+      padding-right: 2rem;
+    }
+  }
+  .hkIntro {
+    flex: 3 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 10rem;
+      font-size: 1.3rem;
+      text-align: justify;
+    }
+    .hkPic2 {
+      align-self: center;
+      display: flex;
+      padding-bottom: 1rem;
+      img {
+        align-self: center;
+        max-width: 25vw;
+        padding: 1rem 0 0 0;
+      }
+      a {
+        text-decoration: none;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+
+#renga {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  .rengaIntro {
+    flex: 6 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-family: "IBM Plex Serif", serif;
+      padding-right: 10rem;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      text-align: justify;
+    }
+    a {
+      font-family: "IBM Plex Serif", serif;
+      text-decoration: none;
+      align-self: flex-end;
+      p {
+        font-size: 1rem;
+      }
+      img {
+        height: 24px;
+        border-radius: 50%;
+      }
+    }
+    .rengaOS {
+      margin-top: 42vh;
+      span {
+        margin: 0.3rem;
+      }
+    }
+  }
+  .rengaPic {
+    flex: 5 1;
+    align-self: flex-start;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1rem 1rem 0rem 1rem;
+    aspect-ratio: 1/1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #pfpLandingPage {
+    .pfpTitile {
+      flex: 2 1 500px;
+    }
+    .ivyPic {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+  }
+
+  #KPK {
+    flex-wrap: wrap-reverse;
+    .KPKPiano {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+    .KPKIntro {
+      flex: 4 1 500px;
+      justify-content: space-around;
+      .kpkOS {
+        margin-top: 8vh;
+      }
+    }
+  }
+
+  #BBRC {
+    flex-wrap: wrap-reverse;
+    .ivyGirl {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+    .BBRCIntro {
+      padding: 1rem 3rem;
+      flex: 4 1 500px;
+      justify-content: space-around;
+      .bbrcOS {
+        margin-top: 8vh;
+      }
+    }
+  }
+
+  #whimsySisters {
+    .wsIntro {
+      padding: 1rem 3rem;
+      flex: 1 1 500px;
+    }
+    .wsPics {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+  }
+
+  #bwople {
+    flex-wrap: wrap-reverse;
+    .bw117 {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+    .bwIntro {
+      flex: 4 1 500px;
+      justify-content: space-around;
+      .bwLink {
+        margin-top: 8vh;
+      }
+    }
+  }
+
+  #lucid {
+    .lucidIntro {
+      padding: 1rem 3rem;
+      flex: 1 1 500px;
+      justify-content: space-around;
+      .lucidOS {
+        align-self: flex-start;
+        margin-top: 8vh;
+      }
+    }
+    .lucidPic {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+  }
+
+  #vivid {
+    flex-wrap: wrap-reverse;
+    .vividPic {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+    .vividIntro {
+      flex: 4 1 500px;
+      justify-content: space-around;
+      .vividLink {
+        margin-top: 8vh;
+      }
+    }
+  }
+
+  #catgirl {
+    .catgirlIntro {
+      padding: 1rem 3rem;
+      flex: 1 1 500px;
+      justify-content: space-around;
+      .catgirlOS {
+        align-self: flex-start;
+        margin-top: 8vh;
+      }
+    }
+    .catgirlPic {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+  }
+
+  #humankind {
+    flex-wrap: wrap-reverse;
+    .hkPics {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 50vw;
+      }
+    }
+    .hkIntro {
+      padding: 1rem 3rem;
+      min-height: 60vh;
+      flex: 3 1 500px;
+      justify-content: space-around;
+      .hkPic2 {
+        align-self: flex-start;
+      }
+    }
+  }
+
+  #renga {
+    .rengaIntro {
+      padding: 1rem 3rem;
+      flex: 6 1 500px;
+      justify-content: space-around;
+      .rengaOS {
+        align-self: flex-start;
+        margin-top: 8vh;
+      }
+    }
+    .rengaPic {
+      flex: 5 1 600px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 55%;
+        height: 55%;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #pfpLandingPage {
+    .pfpTitile {
+      min-height: 70vh;
+      padding: 2rem 1rem 0rem 3rem;
+      justify-content: space-around;
+      .ivyCaption {
+        align-self: flex-start;
+        margin-top: 2vh;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #pfpLandingPage {
+    .pfpTitile {
+      padding: 1.5rem 1rem 0rem 3rem;
+      h2 {
+        font-size: 3rem;
+      }
+      .pfpIntro {
+        font-size: 1.2rem;
+        p {
+          padding-right: 3rem;
+        }
+      }
+    }
+    .ivyPic {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      img {
+        width: 60vw;
+      }
+    }
+  }
+
+  #KPK {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .KPKPiano {
+      img {
+        width: 60vw;
+      }
+    }
+    .KPKIntro {
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+
+  #klonesAncestor {
+    padding: 2rem 3.5rem 0rem 3.5rem;
+    h2 {
+      font-size: 2rem;
+      display: inline-block;
+      width: 300px;
+    }
+    .ancestor {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      padding: 1rem;
+      align-items: flex-end;
+      img {
+        max-width: 40vw;
+      }
+    }
+  }
+
+  #BBRC {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .ivyGirl {
+      img {
+        width: 65vw;
+      }
+    }
+    .BBRCIntro {
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+
+  #whimsySisters {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .wsIntro {
+      min-height: 50vh;
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+      img {
+        max-width: 40vw;
+      }
+    }
+    .wsPics {
+      img {
+        width: 60vw;
+      }
+      .wsOS {
+        padding: 0.2rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  #bwople {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .bw117 {
+      img {
+        width: 60vw;
+      }
+    }
+    .bwIntro {
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+
+  #lucid {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .lucidIntro {
+      min-height: 30vh;
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+    .lucidPic {
+      img {
+        width: 60vw;
+      }
+    }
+  }
+
+  #vivid {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .vividPic {
+      img {
+        width: 60vw;
+      }
+    }
+    .vividIntro {
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+
+  #catgirl {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .catgirlIntro {
+      min-height: 30vh;
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+    .catgirlPic {
+      img {
+        width: 60vw;
+      }
+    }
+  }
+
+  #humankind {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .hkPics {
+      img {
+        width: 60vw;
+      }
+    }
+    .hkIntro {
+      padding: 0rem 1.5rem;
+      min-height: 50vh;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+      .hkPic2 {
+        img {
+          max-width: 35vw;
+        }
+      }
+    }
+  }
+
+  #renga {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+    .rengaIntro {
+      min-height: 30vh;
+      padding: 0rem 1.5rem;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+        padding-right: 2rem;
+      }
+    }
+    .rengaPic {
+      img {
+        width: 75%;
+        height: 75%;
+        border-radius: 50%;
+      }
+    }
+  }
+}

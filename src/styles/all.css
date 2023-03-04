@@ -1,0 +1,2208 @@
+@import "animate.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Labrada", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: transparent;
+  min-height: 8vh;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav ul li {
+  list-style-type: none;
+  margin: 1.1rem 1rem 1.1rem 2rem;
+}
+nav ul li a {
+  color: rgb(92, 89, 89);
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  transition: all 0.1s ease;
+}
+nav ul li a:hover {
+  color: rgba(237, 176, 45, 0.752);
+}
+
+.footer {
+  font-size: 0.9rem;
+  background-color: rgb(35, 35, 34);
+  min-height: 6vh;
+  padding: 1rem;
+  text-align: center;
+}
+.footer p {
+  color: rgb(167, 167, 156);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+section {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes typewriterOne {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typewriterTwo {
+  from {
+    width: 0;
+  }
+  to {
+    width: 66%;
+  }
+}
+@keyframes typewriterThree {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkTextCursorOne {
+  from {
+    border-right-color: rgba(237, 176, 45, 0.752);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+@keyframes blinkTextCursorTwo {
+  from {
+    border-right: solid rgba(237, 176, 45, 0.752);
+  }
+  to {
+    border-right: transparent;
+  }
+}
+@keyframes blinkTextCursorThree {
+  from {
+    border-right: solid rgb(48, 46, 46);
+  }
+  to {
+    border-right: transparent;
+  }
+}
+.landingPage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  color: rgb(48, 46, 46);
+  min-height: 92vh;
+}
+.landingPage div.intro {
+  flex: 3 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 6vh;
+  padding-left: 7.5vw;
+  min-height: 92vh;
+}
+.landingPage div.intro div.title {
+  cursor: default;
+}
+.landingPage div.intro .titleLineOne {
+  color: rgba(237, 176, 45, 0.752);
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  white-space: nowrap;
+  border-right: solid rgba(237, 176, 45, 0.752);
+  overflow: hidden;
+  animation: typewriterOne 2.3s steps(25) 0.5s 1 normal both, blinkTextCursorOne 900ms steps(25) 4 forwards;
+}
+.landingPage div.intro div.title .titleLineTwo {
+  color: rgba(237, 176, 45, 0.752);
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriterTwo 1.5s steps(17) 3s 1 normal both, blinkTextCursorTwo 900ms steps(17) 3s 3 forwards;
+}
+.landingPage div.intro .selfIntro h2 {
+  cursor: default;
+  color: rgb(48, 46, 46);
+  font-size: 1.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriterThree 2.2s steps(22) 6s 1 normal both, blinkTextCursorThree 900ms steps(22) 6s infinite normal;
+}
+.landingPage div.intro #featureButton {
+  align-self: flex-end;
+  margin-right: 10vw;
+  text-decoration: none;
+  color: rgb(248, 245, 242);
+  font-size: 1.2rem;
+  background-color: rgba(237, 176, 45, 0.752);
+  padding: 16px 32px;
+  border-radius: 40px;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease;
+}
+.landingPage div.intro #featureButton:hover {
+  background-color: rgb(48, 46, 46);
+}
+.landingPage div.intro .dreamerOS {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-self: flex-end;
+  margin-bottom: 7vh;
+}
+.landingPage div.intro .dreamerOS a {
+  text-decoration: none;
+  color: rgb(48, 46, 46);
+}
+.landingPage div.dreamerImg {
+  flex: 2 1;
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
+.landingPage div.dreamerImg img {
+  height: 85vh;
+  animation: fadeInDown 2s;
+}
+
+.slideshow {
+  padding: 1rem 0rem;
+  background-color: rgba(199, 208, 186, 0.5);
+  min-height: 100vh;
+  cursor: default;
+}
+.slideshow .slide-effect .slideContainer {
+  padding: 5rem 2rem 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  min-height: 90vh;
+  justify-content: center;
+}
+.slideshow .slide-effect .slideContainer h2 {
+  flex: 2.5 1;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  color: rgb(135, 67, 2);
+  text-align: left;
+  padding-left: 2rem;
+}
+.slideshow .slide-effect .slideContainer .slideImg {
+  flex: 4 1 589.2px;
+  align-self: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+}
+.slideshow .slide-effect .slideContainer .slideImg img {
+  flex: 0 0 589.2px;
+  height: 78vh;
+  width: 100%;
+  border-radius: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  opacity: 0.9;
+  animation-delay: 0.8s;
+  margin-left: 3rem;
+}
+.slideshow .slide-effect .slideContainer .featureCaption {
+  height: auto;
+  width: auto;
+  flex: 18 1;
+  align-self: flex-end;
+}
+.slideshow .slide-effect .slideContainer .featureCaption a {
+  text-decoration: none;
+}
+.slideshow .slide-effect .slideContainer .featureCaption svg {
+  animation-delay: 0.8s;
+}
+.slideshow .slide-effect .slideContainer .featureCaption img {
+  animation-delay: 0.8s;
+  height: 24px;
+  border-radius: 50%;
+}
+.slideshow .slide-effect .slideContainer .featureCaption p {
+  color: #7e6301;
+  font-size: 1.7rem;
+  animation-delay: 0.8s;
+}
+
+.basics {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: rgb(63, 63, 116);
+  min-height: 100vh;
+}
+.basics #stitchingFissures {
+  flex: 3 1;
+  align-self: flex-start;
+  max-height: 90vh;
+  max-width: 40vw;
+  margin-top: 8vh;
+}
+.basics .nftIntro {
+  flex: 4 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5rem 10rem 0.5rem 5rem;
+  cursor: default;
+}
+.basics .nftIntro h2 {
+  flex: 1 1;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  color: rgba(237, 176, 45, 0.752);
+  animation-delay: 1s;
+}
+.basics .nftIntro p {
+  padding-right: 7rem;
+  font-family: "IBM Plex Serif", serif;
+  flex: 6 1;
+  color: rgb(240, 236, 224);
+  font-size: 1.5rem;
+  text-align: justify;
+  animation-delay: 1.5s;
+  padding-top: 1.5rem;
+}
+.basics .nftIntro .mekOS {
+  flex: 1 1;
+  align-self: flex-start;
+  height: auto;
+  width: auto;
+}
+.basics .nftIntro .mekOS a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+.basics .nftIntro .mekOS img {
+  border-radius: 50%;
+  margin-top: 6rem;
+  height: 24px;
+}
+.basics .nftIntro .mekOS .basicsCaption {
+  font-family: "Labrada", sans-serif;
+  font-size: 1rem;
+  padding: 0;
+}
+
+@media screen and (max-width: 1466px) {
+  #landingPage .dreamerImg img {
+    height: 50vh;
+    animation: fadeInDown 0s;
+  }
+  #landingPage .intro {
+    justify-content: space-evenly;
+  }
+  #landingPage .dreamerOS {
+    flex-direction: row;
+    margin-bottom: 0vh;
+  }
+}
+@media screen and (max-width: 1250px) {
+  #feature .slide-effect .slideContainer .slideImg {
+    flex: 4 1 430px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #feature .slide-effect .slideContainer .slideImg img {
+    flex: 0 0 430px;
+    height: 65vh;
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 1120px) {
+  #landingPage .dreamerOS {
+    align-self: flex-start;
+  }
+  #landingPage .dreamerImg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #feature .slide-effect .slideContainer .slideImg {
+    flex: 4 1 400px;
+  }
+  #feature .slide-effect .slideContainer .slideImg img {
+    flex: 0 0 400px;
+    height: 55vh;
+    margin-left: 1rem;
+  }
+  #feature .featureCaption {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #basics #stitchingFissures {
+    max-height: 60vh;
+    max-width: 70vw;
+  }
+  #basics .nftIntro {
+    flex: 4 1 550px;
+    padding: 5rem 2rem 0.5rem 5rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  #landingPage .intro .title .titleLineOne {
+    animation: none;
+    overflow: auto;
+    white-space: normal;
+    font-size: 2.5rem;
+    border-right: none;
+  }
+  #landingPage .intro .title .titleLineTwo {
+    animation: none;
+    overflow: auto;
+    white-space: normal;
+    font-size: 2.5rem;
+    border-right: none;
+  }
+  #landingPage div.intro h2 {
+    animation: none;
+    overflow: auto;
+    white-space: normal;
+    font-size: 1.3rem;
+    border-right: none;
+  }
+  #landingPage div.intro #featureButton {
+    animation: none;
+    align-self: flex-start;
+    font-size: 1rem;
+  }
+  #landingPage div.intro .dreamerOS {
+    animation: none;
+  }
+  #landingPage div.intro .dreamerCaption {
+    animation: none;
+  }
+  #landingPage .dreamerImg #dreamerImg {
+    height: 40vh;
+    max-width: 95vw;
+    animation: none;
+  }
+  #feature .slide-effect .slideContainer h2 {
+    padding-left: 1rem;
+    font-size: 2rem;
+  }
+  #feature .slide-effect .slideContainer .slideImg {
+    flex: 4 1 460px;
+    align-self: flex-start;
+  }
+  #feature .slide-effect .slideContainer .slideImg img {
+    flex: 0 0 260px;
+    height: 35vh;
+    animation: none;
+    margin: 0;
+  }
+  #feature .slide-effect .slideContainer .featureCaption {
+    flex: 18 1 220px;
+    align-self: flex-start;
+  }
+  #feature .slide-effect .slideContainer .featureCaption svg {
+    animation: none;
+  }
+  #feature .slide-effect .slideContainer .featureCaption img {
+    animation: none;
+  }
+  #feature .slide-effect .slideContainer .featureCaption p {
+    animation: none;
+  }
+  #basics #stitchingFissures {
+    max-height: 60vh;
+    max-width: 90vw;
+  }
+  #basics .nftIntro {
+    padding: 5rem 2rem 0.5rem 2rem;
+  }
+  #basics .nftIntro h2 {
+    font-size: 2rem;
+    animation: none;
+  }
+  #basics .nftIntro p {
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    animation: none;
+  }
+  #basics .nftIntro .mekOS .basicsCaption {
+    font-size: 1rem;
+  }
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.pfpPage {
+  color: #343644;
+}
+.pfpPage a {
+  color: #343644;
+}
+
+#pfpLandingPage {
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  cursor: default;
+  color: rgb(18, 45, 25);
+}
+#pfpLandingPage .pfpTitile {
+  flex: 2 1;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 92vh;
+  padding: 4rem 1rem 2rem 3rem;
+}
+#pfpLandingPage .pfpTitile h2 {
+  font-size: 5rem;
+}
+#pfpLandingPage .pfpTitile .pfpIntro {
+  font-size: 1.6rem;
+}
+#pfpLandingPage .pfpTitile .pfpIntro p {
+  margin-bottom: 2rem;
+  text-align: justify;
+  padding-right: 5rem;
+  font-family: "IBM Plex Serif", serif;
+}
+#pfpLandingPage .pfpTitile .ivyCaption {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-top: 27vh;
+}
+#pfpLandingPage .pfpTitile .ivyCaption a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  color: rgb(18, 45, 25);
+}
+#pfpLandingPage .pfpTitile .ivyCaption a span {
+  margin: 0.3rem;
+}
+#pfpLandingPage .ivyPic {
+  flex: 1 1;
+}
+#pfpLandingPage .ivyPic img {
+  max-height: 90vh;
+  max-width: 80vw;
+}
+
+#KPK {
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  cursor: default;
+}
+#KPK .KPKPiano {
+  flex: 3 1;
+  padding: 1rem;
+}
+#KPK .KPKPiano img {
+  max-height: 78vh;
+  border-radius: 50%;
+}
+#KPK .KPKIntro {
+  flex: 4 1;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#KPK .KPKIntro h2 {
+  font-size: 3rem;
+}
+#KPK .KPKIntro p {
+  font-size: 1.3rem;
+  text-align: justify;
+  padding-top: 2rem;
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 8rem;
+}
+#KPK .KPKIntro a {
+  text-decoration: none;
+  align-self: flex-start;
+  font-family: "IBM Plex Serif", serif;
+}
+#KPK .KPKIntro a p {
+  font-size: 1rem;
+}
+#KPK .KPKIntro .kpkOS {
+  margin-top: 32vh;
+}
+#KPK .KPKIntro .kpkOS span {
+  margin: 0.3rem;
+}
+
+#klonesAncestor {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#klonesAncestor h2 {
+  font-size: 3rem;
+}
+#klonesAncestor .ancestor {
+  padding: 1rem;
+}
+#klonesAncestor .ancestor img {
+  max-width: 21vw;
+  border-radius: 50%;
+}
+
+#BBRC {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+#BBRC .ivyGirl {
+  flex: 3 1;
+  padding: 1rem;
+}
+#BBRC .ivyGirl img {
+  max-height: 82vh;
+}
+#BBRC .BBRCIntro {
+  flex: 4 1;
+  padding: 3rem 3rem 0 0;
+  display: flex;
+  flex-direction: column;
+}
+#BBRC .BBRCIntro h2 {
+  font-size: 3rem;
+}
+#BBRC .BBRCIntro p {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 12rem;
+}
+#BBRC .BBRCIntro a {
+  text-decoration: none;
+  align-self: flex-start;
+  font-family: "IBM Plex Serif", serif;
+}
+#BBRC .BBRCIntro a p {
+  font-size: 1rem;
+}
+#BBRC .BBRCIntro .bbrcOS {
+  margin-top: 38vh;
+}
+#BBRC .BBRCIntro .bbrcOS span {
+  margin: 0.3rem;
+}
+
+#whimsySisters {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: space-evenly;
+}
+#whimsySisters .wsIntro {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+#whimsySisters .wsIntro h2 {
+  font-size: 3rem;
+}
+#whimsySisters .wsIntro p {
+  font-size: 1.3rem;
+  text-align: justify;
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 8rem;
+  padding-top: 1rem;
+}
+#whimsySisters .wsIntro img {
+  align-self: flex-end;
+  max-width: 25vw;
+  border-radius: 50%;
+  padding: 1rem 0 0 0;
+}
+#whimsySisters .wsIntro a {
+  text-decoration: none;
+  align-self: flex-end;
+}
+#whimsySisters .wsPics {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#whimsySisters .wsPics img {
+  max-height: 80vh;
+  border-radius: 50%;
+}
+#whimsySisters .wsPics a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  align-self: flex-end;
+}
+#whimsySisters .wsPics a span {
+  margin-right: 0.3rem;
+}
+#whimsySisters .wsPics p {
+  font-size: 1rem;
+}
+
+#bwople {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+#bwople .bw117 {
+  flex: 3 1;
+  padding: 1rem;
+}
+#bwople .bw117 img {
+  max-height: 75vh;
+  border-radius: 50%;
+}
+#bwople .bwIntro {
+  flex: 4 1;
+  padding: 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#bwople .bwIntro h2 {
+  font-size: 3rem;
+}
+#bwople .bwIntro p {
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 8rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+#bwople .bwIntro a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  align-self: flex-start;
+}
+#bwople .bwIntro a p {
+  font-size: 1rem;
+}
+#bwople .bwIntro a img {
+  height: 24px;
+  border-radius: 50%;
+}
+#bwople .bwIntro .bwLink {
+  margin-top: 35vh;
+}
+#bwople .bwIntro .bwLink img {
+  margin: 0.3rem;
+}
+
+#lucid {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+#lucid .lucidIntro {
+  flex: 1 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#lucid .lucidIntro h2 {
+  font-size: 3rem;
+}
+#lucid .lucidIntro p {
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 10rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+#lucid .lucidIntro a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  align-self: flex-end;
+}
+#lucid .lucidIntro a p {
+  font-size: 1rem;
+}
+#lucid .lucidIntro a img {
+  height: 24px;
+  border-radius: 50%;
+}
+#lucid .lucidIntro .lucidOS {
+  margin-top: 47vh;
+}
+#lucid .lucidIntro .lucidOS span {
+  margin: 0.3rem;
+}
+#lucid .lucidPic {
+  flex: 1 1;
+  padding: 1rem;
+}
+#lucid .lucidPic img {
+  max-height: 80vh;
+  border-radius: 50%;
+}
+
+#vivid {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+#vivid .vividPic {
+  flex: 3 1;
+  padding: 1rem;
+}
+#vivid .vividPic img {
+  max-height: 75vh;
+  border-radius: 50%;
+}
+#vivid .vividIntro {
+  flex: 4 1;
+  padding: 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#vivid .vividIntro h2 {
+  font-size: 3rem;
+}
+#vivid .vividIntro p {
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 8rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+#vivid .vividIntro a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  align-self: flex-start;
+}
+#vivid .vividIntro a p {
+  font-size: 1rem;
+}
+#vivid .vividIntro a img {
+  height: 24px;
+  border-radius: 50%;
+}
+#vivid .vividIntro .vividLink {
+  margin-top: 41vh;
+}
+#vivid .vividIntro .vividLink span {
+  margin: 0.3rem;
+}
+
+#catgirl {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+#catgirl .catgirlIntro {
+  flex: 1 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#catgirl .catgirlIntro h2 {
+  font-size: 3rem;
+}
+#catgirl .catgirlIntro p {
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 10rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+#catgirl .catgirlIntro a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  align-self: flex-end;
+}
+#catgirl .catgirlIntro a p {
+  font-size: 1rem;
+}
+#catgirl .catgirlIntro a img {
+  height: 24px;
+  border-radius: 50%;
+}
+#catgirl .catgirlIntro .catgirlOS {
+  margin-top: 42vh;
+}
+#catgirl .catgirlIntro .catgirlOS span {
+  margin: 0.3rem;
+}
+#catgirl .catgirlPic {
+  flex: 1 1;
+  padding: 1rem;
+}
+#catgirl .catgirlPic img {
+  max-height: 80vh;
+  border-radius: 50%;
+}
+
+#humankind {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: space-evenly;
+}
+#humankind .hkPics {
+  flex: 2 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#humankind .hkPics img {
+  max-height: 80vh;
+}
+#humankind .hkPics a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  align-self: flex-end;
+  padding-right: 2rem;
+  margin-top: 1.5rem;
+}
+#humankind .hkPics a span {
+  margin: 0.3rem;
+}
+#humankind .hkPics p {
+  font-size: 1rem;
+  padding-right: 2rem;
+}
+#humankind .hkIntro {
+  flex: 3 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+#humankind .hkIntro h2 {
+  font-size: 3rem;
+}
+#humankind .hkIntro p {
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 10rem;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+#humankind .hkIntro .hkPic2 {
+  align-self: center;
+  display: flex;
+  padding-bottom: 1rem;
+}
+#humankind .hkIntro .hkPic2 img {
+  align-self: center;
+  max-width: 25vw;
+  padding: 1rem 0 0 0;
+}
+#humankind .hkIntro .hkPic2 a {
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+#renga {
+  cursor: default;
+  min-height: 100vh;
+  background-color: rgb(141, 180, 178);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+#renga .rengaIntro {
+  flex: 6 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#renga .rengaIntro h2 {
+  font-size: 3rem;
+}
+#renga .rengaIntro p {
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 10rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+#renga .rengaIntro a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  align-self: flex-end;
+}
+#renga .rengaIntro a p {
+  font-size: 1rem;
+}
+#renga .rengaIntro a img {
+  height: 24px;
+  border-radius: 50%;
+}
+#renga .rengaIntro .rengaOS {
+  margin-top: 42vh;
+}
+#renga .rengaIntro .rengaOS span {
+  margin: 0.3rem;
+}
+#renga .rengaPic {
+  flex: 5 1;
+  align-self: flex-start;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1rem 1rem 0rem 1rem;
+  aspect-ratio: 1/1;
+}
+#renga .rengaPic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+}
+
+@media screen and (max-width: 1350px) {
+  #pfpLandingPage .pfpTitile {
+    flex: 2 1 500px;
+  }
+  #pfpLandingPage .ivyPic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #pfpLandingPage .ivyPic img {
+    width: 50vw;
+  }
+  #KPK {
+    flex-wrap: wrap-reverse;
+  }
+  #KPK .KPKPiano {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #KPK .KPKPiano img {
+    width: 50vw;
+  }
+  #KPK .KPKIntro {
+    flex: 4 1 500px;
+    justify-content: space-around;
+  }
+  #KPK .KPKIntro .kpkOS {
+    margin-top: 8vh;
+  }
+  #BBRC {
+    flex-wrap: wrap-reverse;
+  }
+  #BBRC .ivyGirl {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #BBRC .ivyGirl img {
+    width: 50vw;
+  }
+  #BBRC .BBRCIntro {
+    padding: 1rem 3rem;
+    flex: 4 1 500px;
+    justify-content: space-around;
+  }
+  #BBRC .BBRCIntro .bbrcOS {
+    margin-top: 8vh;
+  }
+  #whimsySisters .wsIntro {
+    padding: 1rem 3rem;
+    flex: 1 1 500px;
+  }
+  #whimsySisters .wsPics {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #whimsySisters .wsPics img {
+    width: 50vw;
+  }
+  #bwople {
+    flex-wrap: wrap-reverse;
+  }
+  #bwople .bw117 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #bwople .bw117 img {
+    width: 50vw;
+  }
+  #bwople .bwIntro {
+    flex: 4 1 500px;
+    justify-content: space-around;
+  }
+  #bwople .bwIntro .bwLink {
+    margin-top: 8vh;
+  }
+  #lucid .lucidIntro {
+    padding: 1rem 3rem;
+    flex: 1 1 500px;
+    justify-content: space-around;
+  }
+  #lucid .lucidIntro .lucidOS {
+    align-self: flex-start;
+    margin-top: 8vh;
+  }
+  #lucid .lucidPic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #lucid .lucidPic img {
+    width: 50vw;
+  }
+  #vivid {
+    flex-wrap: wrap-reverse;
+  }
+  #vivid .vividPic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #vivid .vividPic img {
+    width: 50vw;
+  }
+  #vivid .vividIntro {
+    flex: 4 1 500px;
+    justify-content: space-around;
+  }
+  #vivid .vividIntro .vividLink {
+    margin-top: 8vh;
+  }
+  #catgirl .catgirlIntro {
+    padding: 1rem 3rem;
+    flex: 1 1 500px;
+    justify-content: space-around;
+  }
+  #catgirl .catgirlIntro .catgirlOS {
+    align-self: flex-start;
+    margin-top: 8vh;
+  }
+  #catgirl .catgirlPic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #catgirl .catgirlPic img {
+    width: 50vw;
+  }
+  #humankind {
+    flex-wrap: wrap-reverse;
+  }
+  #humankind .hkPics {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #humankind .hkPics img {
+    width: 50vw;
+  }
+  #humankind .hkIntro {
+    padding: 1rem 3rem;
+    min-height: 60vh;
+    flex: 3 1 500px;
+    justify-content: space-around;
+  }
+  #humankind .hkIntro .hkPic2 {
+    align-self: flex-start;
+  }
+  #renga .rengaIntro {
+    padding: 1rem 3rem;
+    flex: 6 1 500px;
+    justify-content: space-around;
+  }
+  #renga .rengaIntro .rengaOS {
+    align-self: flex-start;
+    margin-top: 8vh;
+  }
+  #renga .rengaPic {
+    flex: 5 1 600px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #renga .rengaPic img {
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #pfpLandingPage .pfpTitile {
+    min-height: 70vh;
+    padding: 2rem 1rem 0rem 3rem;
+    justify-content: space-around;
+  }
+  #pfpLandingPage .pfpTitile .ivyCaption {
+    align-self: flex-start;
+    margin-top: 2vh;
+  }
+}
+@media screen and (max-width: 660px) {
+  #pfpLandingPage .pfpTitile {
+    padding: 1.5rem 1rem 0rem 3rem;
+  }
+  #pfpLandingPage .pfpTitile h2 {
+    font-size: 3rem;
+  }
+  #pfpLandingPage .pfpTitile .pfpIntro {
+    font-size: 1.2rem;
+  }
+  #pfpLandingPage .pfpTitile .pfpIntro p {
+    padding-right: 3rem;
+  }
+  #pfpLandingPage .ivyPic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #pfpLandingPage .ivyPic img {
+    width: 60vw;
+  }
+  #KPK {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #KPK .KPKPiano img {
+    width: 60vw;
+  }
+  #KPK .KPKIntro {
+    padding: 0rem 1.5rem;
+  }
+  #KPK .KPKIntro h2 {
+    font-size: 2rem;
+  }
+  #KPK .KPKIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #klonesAncestor {
+    padding: 2rem 3.5rem 0rem 3.5rem;
+  }
+  #klonesAncestor h2 {
+    font-size: 2rem;
+    display: inline-block;
+    width: 300px;
+  }
+  #klonesAncestor .ancestor {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: flex-end;
+  }
+  #klonesAncestor .ancestor img {
+    max-width: 40vw;
+  }
+  #BBRC {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #BBRC .ivyGirl img {
+    width: 65vw;
+  }
+  #BBRC .BBRCIntro {
+    padding: 0rem 1.5rem;
+  }
+  #BBRC .BBRCIntro h2 {
+    font-size: 2rem;
+  }
+  #BBRC .BBRCIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #whimsySisters {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #whimsySisters .wsIntro {
+    min-height: 50vh;
+    padding: 0rem 1.5rem;
+  }
+  #whimsySisters .wsIntro h2 {
+    font-size: 2rem;
+  }
+  #whimsySisters .wsIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #whimsySisters .wsIntro img {
+    max-width: 40vw;
+  }
+  #whimsySisters .wsPics img {
+    width: 60vw;
+  }
+  #whimsySisters .wsPics .wsOS {
+    padding: 0.2rem;
+    margin-top: 1rem;
+  }
+  #bwople {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #bwople .bw117 img {
+    width: 60vw;
+  }
+  #bwople .bwIntro {
+    padding: 0rem 1.5rem;
+  }
+  #bwople .bwIntro h2 {
+    font-size: 2rem;
+  }
+  #bwople .bwIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #lucid {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #lucid .lucidIntro {
+    min-height: 30vh;
+    padding: 0rem 1.5rem;
+  }
+  #lucid .lucidIntro h2 {
+    font-size: 2rem;
+  }
+  #lucid .lucidIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #lucid .lucidPic img {
+    width: 60vw;
+  }
+  #vivid {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #vivid .vividPic img {
+    width: 60vw;
+  }
+  #vivid .vividIntro {
+    padding: 0rem 1.5rem;
+  }
+  #vivid .vividIntro h2 {
+    font-size: 2rem;
+  }
+  #vivid .vividIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #catgirl {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #catgirl .catgirlIntro {
+    min-height: 30vh;
+    padding: 0rem 1.5rem;
+  }
+  #catgirl .catgirlIntro h2 {
+    font-size: 2rem;
+  }
+  #catgirl .catgirlIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #catgirl .catgirlPic img {
+    width: 60vw;
+  }
+  #humankind {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #humankind .hkPics img {
+    width: 60vw;
+  }
+  #humankind .hkIntro {
+    padding: 0rem 1.5rem;
+    min-height: 50vh;
+  }
+  #humankind .hkIntro h2 {
+    font-size: 2rem;
+  }
+  #humankind .hkIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #humankind .hkIntro .hkPic2 img {
+    max-width: 35vw;
+  }
+  #renga {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #renga .rengaIntro {
+    min-height: 30vh;
+    padding: 0rem 1.5rem;
+  }
+  #renga .rengaIntro h2 {
+    font-size: 2rem;
+  }
+  #renga .rengaIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #renga .rengaPic img {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+  }
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+.artPage {
+  background-color: rgb(222, 214, 214);
+  color: rgb(10, 39, 11);
+}
+.artPage a {
+  color: rgb(10, 39, 11);
+}
+
+#artLandingPage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: default;
+  color: rgb(82, 55, 32);
+}
+#artLandingPage .artTitile {
+  flex: 4 1;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 92vh;
+  padding: 4rem 1rem 0rem 3rem;
+}
+#artLandingPage .artTitile h2 {
+  font-size: 5rem;
+}
+#artLandingPage .artTitile .artIntro {
+  font-size: 1.6rem;
+}
+#artLandingPage .artTitile .artIntro p {
+  padding-right: 7rem;
+  font-family: "IBM Plex Serif", serif;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+#artLandingPage .artTitile .TAOSTop {
+  align-self: flex-end;
+  margin-top: 33vh;
+}
+#artLandingPage .artTitile .TAOSTop a {
+  display: flex;
+  align-items: flex-end;
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  color: rgb(82, 55, 32);
+}
+#artLandingPage .artTitile .TAOSTop a span {
+  margin: 0.3rem;
+}
+#artLandingPage .TAOSPic {
+  flex: 3 1;
+}
+#artLandingPage .TAOSPic img {
+  max-height: 92vh;
+  border-radius: 30%;
+  padding: 1rem 3rem 2rem 1rem;
+}
+
+#dreamer {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  cursor: default;
+}
+#dreamer .dreamerPic {
+  flex: 3 1;
+  padding: 1rem;
+}
+#dreamer .dreamerPic img {
+  max-height: 85vh;
+  border-radius: 30%;
+  padding-top: 1.5rem;
+}
+#dreamer .dreamerIntro {
+  flex: 4 1;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#dreamer .dreamerIntro h2 {
+  font-size: 3rem;
+}
+#dreamer .dreamerIntro p {
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 8rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  padding-top: 2rem;
+}
+#dreamer .dreamerIntro a {
+  font-family: "IBM Plex Serif", serif;
+  align-self: flex-start;
+}
+#dreamer .dreamerIntro .dreamerOSLink {
+  margin-top: 52vh;
+}
+
+#COH {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  cursor: default;
+}
+#COH .cohIntro {
+  flex: 5 1;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#COH .cohIntro h2 {
+  font-size: 3rem;
+}
+#COH .cohIntro p {
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 12rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  padding-top: 2rem;
+}
+#COH .cohIntro a {
+  font-family: "IBM Plex Serif", serif;
+  align-self: flex-end;
+}
+#COH .cohIntro a img {
+  height: 24px;
+  border-radius: 50%;
+}
+#COH .cohIntro .cohLink {
+  margin-top: 60vh;
+}
+#COH .cohPic {
+  flex: 4 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#COH .cohPic img {
+  max-height: 85vh;
+  border-radius: 30%;
+  padding-top: 1.5rem;
+}
+
+#DR {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  cursor: default;
+}
+#DR .drPic {
+  flex: 3 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+#DR .drPic img {
+  max-height: 85vh;
+  border-radius: 30%;
+  padding-top: 1.5rem;
+}
+#DR .drIntro {
+  min-height: 100vh;
+  flex: 4 1;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#DR .drIntro h2 {
+  font-size: 3rem;
+}
+#DR .drIntro p {
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 8rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  padding-top: 2rem;
+}
+#DR .drIntro a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  align-self: flex-start;
+}
+#DR .drIntro a span {
+  margin: 0.3rem;
+}
+#DR .drIntro .drOSLink {
+  margin-top: 35vh;
+}
+
+#TAOS {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: default;
+}
+#TAOS .taosIntro {
+  flex: 2 1;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#TAOS .taosIntro h2 {
+  font-size: 2.5rem;
+}
+#TAOS .taosIntro p {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding-top: 2rem;
+}
+#TAOS .seasons9623 {
+  flex: 3 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#TAOS .seasons9623 a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  display: flex;
+  align-self: flex-start;
+}
+#TAOS .seasons9623 a span {
+  margin-right: 0.3rem;
+}
+#TAOS .seasons9623 img {
+  max-height: 85vh;
+  max-width: 32vw;
+  border-radius: 30%;
+  padding: 1.5rem;
+}
+#TAOS .seasons9415 {
+  flex: 3 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#TAOS .seasons9415 a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  display: flex;
+  align-self: flex-start;
+}
+#TAOS .seasons9415 a span {
+  margin-right: 0.3rem;
+}
+#TAOS .seasons9415 img {
+  max-height: 85vh;
+  max-width: 32vw;
+  border-radius: 30%;
+  padding: 1.5rem;
+}
+
+#lofiLoft {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: default;
+}
+#lofiLoft .lofi4652 {
+  flex: 3 1;
+  display: flex;
+  flex-direction: column;
+}
+#lofiLoft .lofi4652 a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  display: flex;
+  align-self: flex-start;
+}
+#lofiLoft .lofi4652 a span {
+  margin-right: 0.3rem;
+}
+#lofiLoft .lofi4652 img {
+  max-height: 85vh;
+  max-width: 35vw;
+  border-radius: 30%;
+  padding: 1.5rem;
+}
+#lofiLoft .lofi895 {
+  flex: 3 1;
+  display: flex;
+  flex-direction: column;
+}
+#lofiLoft .lofi895 a {
+  font-family: "IBM Plex Serif", serif;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  display: flex;
+  align-self: flex-start;
+}
+#lofiLoft .lofi895 a span {
+  margin-right: 0.3rem;
+}
+#lofiLoft .lofi895 img {
+  max-height: 85vh;
+  max-width: 35vw;
+  border-radius: 30%;
+  padding: 1.5rem;
+}
+#lofiLoft .lofiIntro {
+  flex: 5 1;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#lofiLoft .lofiIntro h2 {
+  font-size: 3rem;
+}
+#lofiLoft .lofiIntro p {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 1.3rem;
+  text-align: justify;
+  padding-top: 2rem;
+}
+
+#longlong {
+  cursor: default;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#longlong .longlongIntro {
+  flex: 6 1;
+  display: flex;
+  flex-direction: column;
+}
+#longlong .longlongIntro h2 {
+  font-size: 3rem;
+}
+#longlong .longlongIntro p {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+#longlong .longlong {
+  flex: 2 1;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+#longlong .longlong img {
+  max-width: 19vw;
+  border-radius: 30%;
+}
+
+#mek {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  cursor: default;
+}
+#mek .mekPic {
+  flex: 3 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#mek .mekPic img {
+  max-height: 85vh;
+  border-radius: 30%;
+  padding-top: 1.5rem;
+}
+#mek .mekIntro {
+  flex: 4 1;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+#mek .mekIntro h2 {
+  font-size: 3rem;
+}
+#mek .mekIntro p {
+  font-family: "IBM Plex Serif", serif;
+  padding-right: 12rem;
+  font-size: 1.3rem;
+  text-align: justify;
+  padding-top: 2rem;
+}
+#mek .mekIntro a {
+  align-self: flex-start;
+}
+#mek .mekIntro a img {
+  height: 24px;
+  border-radius: 50%;
+}
+#mek .mekIntro .mekLink {
+  margin-top: 56vh;
+}
+
+@media screen and (max-width: 1350px) {
+  #artLandingPage .artTitile {
+    flex: 2 1 500px;
+  }
+  #artLandingPage .TAOSPic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #artLandingPage .TAOSPic img {
+    width: 50vw;
+  }
+  #dreamer {
+    flex-wrap: wrap-reverse;
+  }
+  #dreamer .dreamerPic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #dreamer .dreamerPic img {
+    width: 50vw;
+  }
+  #dreamer .dreamerIntro {
+    flex: 4 1 500px;
+    justify-content: space-around;
+  }
+  #dreamer .dreamerIntro .dreamerOSLink {
+    margin-top: 8vh;
+  }
+  #COH .cohIntro {
+    padding: 1rem 3rem;
+    flex: 1 1 500px;
+    justify-content: space-around;
+  }
+  #COH .cohIntro .cohLink {
+    align-self: flex-start;
+    margin-top: 8vh;
+  }
+  #COH .cohPic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #COH .cohPic img {
+    width: 50vw;
+  }
+  #DR {
+    flex-wrap: wrap-reverse;
+  }
+  #DR .drPic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #DR .drPic img {
+    width: 50vw;
+  }
+  #DR .drIntro {
+    flex: 4 1 500px;
+    justify-content: space-around;
+    min-height: 60vh;
+  }
+  #DR .drIntro .drOSLink {
+    margin-top: 8vh;
+  }
+  #TAOS .taosIntro {
+    padding: 1rem 3rem;
+    flex: 1 1 800px;
+    justify-content: space-around;
+  }
+  #TAOS .seasons9623 {
+    flex: 3 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #TAOS .seasons9623 img {
+    max-width: 50vw;
+  }
+  #TAOS .seasons9415 {
+    flex: 3 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #TAOS .seasons9415 img {
+    max-width: 50vw;
+  }
+  #lofiLoft {
+    flex-wrap: wrap-reverse;
+  }
+  #lofiLoft .lofiIntro {
+    padding: 1rem 3rem;
+    flex: 5 1 800px;
+    justify-content: space-around;
+  }
+  #lofiLoft .lofi4652 {
+    flex: 3 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #lofiLoft .lofi4652 img {
+    max-width: 50vw;
+  }
+  #lofiLoft .lofi895 {
+    flex: 3 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #lofiLoft .lofi895 img {
+    max-width: 50vw;
+  }
+  #mek {
+    flex-wrap: wrap-reverse;
+  }
+  #mek .mekPic {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  #mek .mekPic img {
+    width: 50vw;
+  }
+  #mek .mekIntro {
+    flex: 4 1 500px;
+    justify-content: space-around;
+    min-height: 40vh;
+  }
+  #mek .mekIntro .mekLink {
+    margin-top: 8vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #artLandingPage .artTitile {
+    min-height: 70vh;
+    padding: 2rem 1rem 0rem 3rem;
+    justify-content: space-around;
+  }
+  #artLandingPage .artTitile .TAOSTop {
+    align-self: flex-start;
+    margin-top: 2vh;
+  }
+}
+@media screen and (max-width: 660px) {
+  #artLandingPage .artTitile {
+    padding: 1.5rem 1rem 0rem 3rem;
+  }
+  #artLandingPage .artTitile h2 {
+    font-size: 3rem;
+  }
+  #artLandingPage .artTitile .artIntro {
+    font-size: 1.2rem;
+  }
+  #artLandingPage .artTitile .artIntro p {
+    padding-right: 3rem;
+  }
+  #artLandingPage .TAOSPic img {
+    width: 60vw;
+  }
+  #dreamer {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #dreamer .dreamerPic {
+    padding: 0rem;
+  }
+  #dreamer .dreamerPic img {
+    width: 60vw;
+    padding-top: 0rem;
+  }
+  #dreamer .dreamerIntro {
+    padding: 0rem 1.5rem;
+  }
+  #dreamer .dreamerIntro h2 {
+    font-size: 2rem;
+  }
+  #dreamer .dreamerIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #COH {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #COH .cohIntro {
+    min-height: 30vh;
+    padding: 0rem 1.5rem;
+  }
+  #COH .cohIntro h2 {
+    font-size: 2rem;
+  }
+  #COH .cohIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #COH .cohPic {
+    padding: 0rem;
+  }
+  #COH .cohPic img {
+    width: 60vw;
+    padding-top: 0rem;
+  }
+  #DR {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #DR .drPic {
+    padding: 0rem;
+  }
+  #DR .drPic img {
+    width: 60vw;
+    padding-top: 0rem;
+  }
+  #DR .drIntro {
+    padding: 0rem 1.5rem;
+  }
+  #DR .drIntro h2 {
+    font-size: 2rem;
+  }
+  #DR .drIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #TAOS {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #TAOS .taosIntro {
+    min-height: 25vh;
+    padding: 0rem 1.5rem;
+  }
+  #TAOS .taosIntro h2 {
+    font-size: 2rem;
+  }
+  #TAOS .taosIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #TAOS .seasons9623 {
+    padding: 0rem;
+  }
+  #TAOS .seasons9623 img {
+    width: 60vw;
+    padding-top: 0rem;
+  }
+  #TAOS .seasons9415 {
+    padding: 0rem;
+  }
+  #TAOS .seasons9415 img {
+    width: 60vw;
+    padding-top: 1rem;
+  }
+  #lofiLoft {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #lofiLoft .lofiIntro {
+    min-height: 25vh;
+    padding: 0rem 1.5rem;
+  }
+  #lofiLoft .lofiIntro h2 {
+    font-size: 2rem;
+  }
+  #lofiLoft .lofiIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #lofiLoft .lofi895 {
+    padding: 0rem;
+  }
+  #lofiLoft .lofi895 img {
+    width: 60vw;
+    padding-top: 0rem;
+  }
+  #lofiLoft .lofi4652 {
+    padding: 0rem;
+  }
+  #lofiLoft .lofi4652 img {
+    width: 60vw;
+    padding-top: 1rem;
+  }
+  #longlong {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #longlong .longlongIntro {
+    min-height: 20vh;
+    padding: 0rem 1.5rem;
+    flex: 6 1 800px;
+  }
+  #longlong .longlongIntro h2 {
+    font-size: 2rem;
+  }
+  #longlong .longlongIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+  #longlong .longlong {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: flex-end;
+  }
+  #longlong .longlong img {
+    max-width: 40vw;
+  }
+  #mek {
+    min-height: 70vh;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  #mek .mekPic {
+    padding: 0rem 0rem 2rem 0rem;
+  }
+  #mek .mekPic img {
+    width: 60vw;
+    padding-top: 0rem;
+  }
+  #mek .mekIntro {
+    padding: 0rem 1.5rem;
+    min-height: 20vh;
+  }
+  #mek .mekIntro h2 {
+    font-size: 2rem;
+  }
+  #mek .mekIntro p {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+}/*# sourceMappingURL=all.css.map */
