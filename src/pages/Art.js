@@ -11,7 +11,6 @@ const Art = () => {
 
   const particlesLoaded = useCallback(async () => {}, []);
 
-  const [ref1, inView1] = useInView();
   const [ref2, inView2] = useInView({
     threshold: 0.2,
     rootMargin: "30% 0px 0px 0px",
@@ -63,10 +62,7 @@ const Art = () => {
   const [ref29, inView29] = useInView();
   const [ref30, inView30] = useInView();
   const [ref31, inView31] = useInView();
-  const [ref32, inView32] = useInView({
-    threshold: 0.2,
-    rootMargin: "30% 0px 0px 0px",
-  });
+  const [ref32, inView32] = useInView();
   const [ref33, inView33] = useInView();
   const [ref34, inView34] = useInView();
   const [ref35, inView35] = useInView();
@@ -118,12 +114,7 @@ const Art = () => {
         <div className="artTitile">
           <h2 className="animate__animated animate__pulse">Art</h2>
           <div className="artIntro">
-            <p
-              ref={ref1}
-              className={
-                inView1 ? "animate__animated animate__fadeInDown" : "hidden"
-              }
-            >
+            <p className="animate__animated animate__fadeInDown">
               NFTs offer artists a new medium to showcase and establish
               authenticity for their digital creations, while providing
               collectors with unique and valuable digital assets to acquire and

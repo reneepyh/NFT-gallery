@@ -11,12 +11,6 @@ const PFP = () => {
 
   const particlesLoaded = useCallback(async () => {}, []);
 
-  const [ref1, inView1] = useInView({
-    threshold: 0.5,
-  });
-  const [ref2, inView2] = useInView({
-    threshold: 0.5,
-  });
   const [ref3, inView3] = useInView({
     threshold: 0.2,
     rootMargin: "30% 0px 0px 0px",
@@ -168,10 +162,7 @@ const PFP = () => {
   const [ref49, inView49] = useInView({
     threshold: 0,
   });
-  const [ref51, inView51] = useInView({
-    threshold: 0.1,
-    rootMargin: "30% 0px 0px 0px",
-  });
+  const [ref51, inView51] = useInView();
   const [ref52, inView52] = useInView({
     threshold: 0,
   });
@@ -220,22 +211,10 @@ const PFP = () => {
         <div className="pfpTitile">
           <h2 className="animate__animated animate__pulse">PFP</h2>
           <div className="pfpIntro">
-            <p
-              ref={ref1}
-              className={
-                inView1 ? "animate__animated animate__fadeInDown" : "hidden"
-              }
-            >
+            <p className="animate__animated animate__fadeInDown">
               "PFP" stands for "Profile Picture".
             </p>
-            <p
-              ref={ref2}
-              className={
-                inView2
-                  ? "animate__animated animate__fadeInDown animate__delay-1s"
-                  : "hidden"
-              }
-            >
+            <p className="animate__animated animate__fadeInDown animate__delay-1s">
               PFP NFT represents a unique digital avatar or profile picture that
               can be used by the owner on various platforms or social media
               accounts.
@@ -1180,17 +1159,14 @@ const PFP = () => {
             RENGA #9149
           </a>
         </div>
-        <div
-          ref={ref51}
-          className={
-            inView51
-              ? "rengaPic animate__animated animate__fadeInDown"
-              : "hidden"
-          }
-        >
+        <div className="rengaPic">
           <img
             src="https://i.seadn.io/gcs/files/7b45531d1f75a2db3c2096131c610c5b.jpg?auto=format&w=1000"
             alt="Renga"
+            ref={ref51}
+            className={
+              inView51 ? "animate__animated animate__fadeInDown" : "hidden"
+            }
           />
         </div>
       </div>
