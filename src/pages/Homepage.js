@@ -18,14 +18,14 @@ const featurePics = [
     marketIcon: true,
   },
   {
-    url: "https://assets.objkt.media/file/assets-003/QmRSP7nT1cMC624pcbfgXLBQeBAjPxEDavDiUer7fi3sJy/artifact",
+    url: "https://ipfs.io/ipfs/QmRSP7nT1cMC624pcbfgXLBQeBAjPxEDavDiUer7fi3sJy",
     caption: "50 Celebration St.",
     marketPlace:
       "https://objkt.com/asset/KT1H9Zwm7DporZSKkD1gN9RuZuBsKupKMuMg/49",
     marketIcon: false,
   },
   {
-    url: "https://assets.objkt.media/file/assets-003/Qme7Lbh6MkwW1SuzNNcvKgRUVtwqZc23a9Z7G54RFfGZjY/artifact",
+    url: "https://ipfs.io/ipfs/Qme7Lbh6MkwW1SuzNNcvKgRUVtwqZc23a9Z7G54RFfGZjY",
     caption: "BWOPLE ⓪①①⑦",
     marketPlace:
       "https://objkt.com/asset/KT1RPMeUfo8P8si3sp6PGwTC9zmBUp6YK8YA/129",

@@ -766,7 +766,7 @@ const PFP = () => {
       <div id="bwople">
         <div className="bw117">
           <img
-            src="https://assets.objkt.media/file/assets-003/Qme7Lbh6MkwW1SuzNNcvKgRUVtwqZc23a9Z7G54RFfGZjY/artifact"
+            src="https://ipfs.io/ipfs/Qme7Lbh6MkwW1SuzNNcvKgRUVtwqZc23a9Z7G54RFfGZjY"
             alt="Bwople 117"
             ref={ref25}
             className={

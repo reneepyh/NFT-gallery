@@ -272,7 +272,7 @@ const Art = () => {
         </div>
         <div className="cohPic">
           <img
-            src="	https://assets.objkt.media/file/assets-003/QmRSP7nT1cMC624pcbfgXLBQeBAjPxEDavDiUer7fi3sJy/artifact"
+            src="https://ipfs.io/ipfs/QmRSP7nT1cMC624pcbfgXLBQeBAjPxEDavDiUer7fi3sJy"
             alt="50 Celebration St."
             ref={ref9}
             className={
@@ -859,7 +859,7 @@ const Art = () => {
       <div id="mek">
         <div className="mekPic">
           <img
-            src="https://assets.objkt.media/file/assets-003/QmcuMSxBcFypPEqmQzVQtXhEd36RsuQzxX9wEE2JK61XZW/artifact"
+            src="https://ipfs.io/ipfs/QmcuMSxBcFypPEqmQzVQtXhEd36RsuQzxX9wEE2JK61XZW"
             alt="Stitching Fissures"
             ref={ref32}
             className={
