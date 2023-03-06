@@ -14,166 +14,219 @@ const PFP = () => {
   const [ref3, inView3] = useInView({
     threshold: 0.2,
     rootMargin: "30% 0px 0px 0px",
+    triggerOnce: true,
   });
   const [ref4, inView4] = useInView({
-    threshold: 0.5,
+    threshold: 0,
+    triggerOnce: true,
   });
   const [ref5, inView5] = useInView({
-    threshold: 0.5,
+    threshold: 0,
+    triggerOnce: true,
   });
   const [ref6, inView6] = useInView({
-    threshold: 0.5,
+    threshold: 0,
+    triggerOnce: true,
   });
   const [ref7, inView7] = useInView({
     threshold: 0.2,
     rootMargin: "30% 0px 0px 0px",
+    triggerOnce: true,
   });
   const [ref8, inView8] = useInView({
-    threshold: 0.5,
+    threshold: 0,
+    triggerOnce: true,
   });
   const [ref9, inView9] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref10, inView10] = useInView({
     threshold: 0.5,
     rootMargin: "30% 0px 0px 0px",
+    triggerOnce: true,
   });
   const [ref11, inView11] = useInView({
     threshold: 0.5,
     rootMargin: "30% 0px 0px 0px",
+    triggerOnce: true,
   });
   const [ref12, inView12] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref13, inView13] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref14, inView14] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref15, inView15] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref16, inView16] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref17, inView17] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref18, inView18] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref19, inView19] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref20, inView20] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref21, inView21] = useInView({
     threshold: 0.2,
     rootMargin: "30% 0px 0px 0px",
+    triggerOnce: true,
   });
   const [ref22, inView22] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref23, inView23] = useInView({
     threshold: 0.2,
+    triggerOnce: true,
     rootMargin: "30% 0px 0px 0px",
   });
   const [ref24, inView24] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref25, inView25] = useInView({
     threshold: 0.2,
+    triggerOnce: true,
     rootMargin: "30% 0px 0px 0px",
   });
   const [ref26, inView26] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref27, inView27] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref28, inView28] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref29, inView29] = useInView({
     threshold: 0.2,
+    triggerOnce: true,
     rootMargin: "30% 0px 0px 0px",
   });
   const [ref30, inView30] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref31, inView31] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref32, inView32] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref33, inView33] = useInView({
     threshold: 0.2,
+    triggerOnce: true,
     rootMargin: "30% 0px 0px 0px",
   });
   const [ref34, inView34] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref35, inView35] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref36, inView36] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref37, inView37] = useInView({
     threshold: 0.2,
+    triggerOnce: true,
     rootMargin: "30% 0px 0px 0px",
   });
   const [ref38, inView38] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref39, inView39] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref40, inView40] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref41, inView41] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref42, inView42] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref43, inView43] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref44, inView44] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref45, inView45] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref46, inView46] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref47, inView47] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref48, inView48] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref49, inView49] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
-  const [ref51, inView51] = useInView();
+  const [ref51, inView51] = useInView({
+    triggerOnce: true,
+  });
   const [ref52, inView52] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref53, inView53] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref54, inView54] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
   const [ref55, inView55] = useInView({
     threshold: 0,
+    triggerOnce: true,
   });
 
   return (

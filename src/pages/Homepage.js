@@ -170,8 +170,8 @@ const Homepage = () => {
               FEATURED COLLECTIONS
             </a>
           )}
-          <div className="dreamerOS animate__animated animate__fadeInDown">
-            {showElement && (
+          {showElement && (
+            <div className="dreamerOS animate__animated animate__fadeInDown">
               <a
                 href="https://opensea.io/assets/ethereum/0x62cdf590945a8e9559e257145df310eb82cd793b/1"
                 target="_blank"
@@ -199,9 +199,7 @@ const Homepage = () => {
                     ></path>
                   </svg>
                 </span>
-              </a>
-            )}
-            {showElement && (
+              </a>{" "}
               <a
                 className="dreamerCaption animate__animated animate__fadeInDown"
                 href="https://opensea.io/assets/ethereum/0x62cdf590945a8e9559e257145df310eb82cd793b/1"
@@ -210,19 +208,19 @@ const Homepage = () => {
               >
                 Dreamer by Pablo Stanley
               </a>
-            )}
-          </div>
+            </div>
+          )}
         </div>
-        <div className="dreamerImg">
-          {showElement && (
+        {showElement && (
+          <div className="dreamerImg">
             <img
               id="dreamerImg"
               src="https://i.seadn.io/gcs/files/5467ce3ffa63a62ec655498e2177c88e.png?auto=format&w=1920"
               alt="dreamerNFT"
               className="animate__animated animate__fadeInDown"
             />
-          )}
-        </div>
+          </div>
+        )}
       </section>
       <section ref={featureRef} id="feature" className="slideshow">
         <Fade {...properties}>

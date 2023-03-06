@@ -14,67 +14,74 @@ const Art = () => {
   const [ref2, inView2] = useInView({
     threshold: 0.2,
     rootMargin: "30% 0px 0px 0px",
+    triggerOnce: true,
   });
-  const [ref3, inView3] = useInView();
-  const [ref4, inView4] = useInView();
-  const [ref5, inView5] = useInView();
-  const [ref6, inView6] = useInView();
-  const [ref7, inView7] = useInView();
-  const [ref8, inView8] = useInView();
+  const [ref3, inView3] = useInView({ triggerOnce: true });
+  const [ref4, inView4] = useInView({ triggerOnce: true });
+  const [ref5, inView5] = useInView({ triggerOnce: true });
+  const [ref6, inView6] = useInView({ triggerOnce: true });
+  const [ref7, inView7] = useInView({ triggerOnce: true });
+  const [ref8, inView8] = useInView({ triggerOnce: true });
   const [ref9, inView9] = useInView({
     threshold: 0.2,
+    triggerOnce: true,
     rootMargin: "30% 0px 0px 0px",
   });
   const [ref10, inView10] = useInView({
     threshold: 0.2,
     rootMargin: "30% 0px 0px 0px",
+    triggerOnce: true,
   });
-  const [ref11, inView11] = useInView();
-  const [ref12, inView12] = useInView();
-  const [ref13, inView13] = useInView();
-  const [ref14, inView14] = useInView();
-  const [ref15, inView15] = useInView();
-  const [ref16, inView16] = useInView();
+  const [ref11, inView11] = useInView({ triggerOnce: true });
+  const [ref12, inView12] = useInView({ triggerOnce: true });
+  const [ref13, inView13] = useInView({ triggerOnce: true });
+  const [ref14, inView14] = useInView({ triggerOnce: true });
+  const [ref15, inView15] = useInView({ triggerOnce: true });
+  const [ref16, inView16] = useInView({ triggerOnce: true });
   const [ref17, inView17] = useInView({
     threshold: 0.2,
+    triggerOnce: true,
     rootMargin: "30% 0px 0px 0px",
   });
   const [ref18, inView18] = useInView({
     threshold: 0.2,
+    triggerOnce: true,
     rootMargin: "30% 0px 0px 0px",
   });
   const [ref19, inView19] = useInView({
     threshold: 0.2,
+    triggerOnce: true,
     rootMargin: "30% 0px 0px 0px",
   });
-  const [ref20, inView20] = useInView();
+  const [ref20, inView20] = useInView({ triggerOnce: true });
   const [ref21, inView21] = useInView({
     threshold: 0.2,
     rootMargin: "30% 0px 0px 0px",
+    triggerOnce: true,
   });
-  const [ref22, inView22] = useInView();
-  const [ref23, inView23] = useInView();
-  const [ref24, inView24] = useInView();
-  const [ref25, inView25] = useInView();
-  const [ref26, inView26] = useInView();
-  const [ref27, inView27] = useInView();
-  const [ref28, inView28] = useInView();
-  const [ref29, inView29] = useInView();
-  const [ref30, inView30] = useInView();
-  const [ref31, inView31] = useInView();
-  const [ref32, inView32] = useInView();
-  const [ref33, inView33] = useInView();
-  const [ref34, inView34] = useInView();
-  const [ref35, inView35] = useInView();
-  const [ref36, inView36] = useInView();
-  const [ref37, inView37] = useInView();
-  const [ref38, inView38] = useInView();
-  const [ref39, inView39] = useInView();
-  const [ref40, inView40] = useInView();
-  const [ref41, inView41] = useInView();
-  const [ref42, inView42] = useInView();
-  const [ref43, inView43] = useInView();
-  const [ref44, inView44] = useInView();
+  const [ref22, inView22] = useInView({ triggerOnce: true });
+  const [ref23, inView23] = useInView({ triggerOnce: true });
+  const [ref24, inView24] = useInView({ triggerOnce: true });
+  const [ref25, inView25] = useInView({ triggerOnce: true });
+  const [ref26, inView26] = useInView({ triggerOnce: true });
+  const [ref27, inView27] = useInView({ triggerOnce: true });
+  const [ref28, inView28] = useInView({ triggerOnce: true });
+  const [ref29, inView29] = useInView({ triggerOnce: true });
+  const [ref30, inView30] = useInView({ triggerOnce: true });
+  const [ref31, inView31] = useInView({ triggerOnce: true });
+  const [ref32, inView32] = useInView({ triggerOnce: true });
+  const [ref33, inView33] = useInView({ triggerOnce: true });
+  const [ref34, inView34] = useInView({ triggerOnce: true });
+  const [ref35, inView35] = useInView({ triggerOnce: true });
+  const [ref36, inView36] = useInView({ triggerOnce: true });
+  const [ref37, inView37] = useInView({ triggerOnce: true });
+  const [ref38, inView38] = useInView({ triggerOnce: true });
+  const [ref39, inView39] = useInView({ triggerOnce: true });
+  const [ref40, inView40] = useInView({ triggerOnce: true });
+  const [ref41, inView41] = useInView({ triggerOnce: true });
+  const [ref42, inView42] = useInView({ triggerOnce: true });
+  const [ref43, inView43] = useInView({ triggerOnce: true });
+  const [ref44, inView44] = useInView({ triggerOnce: true });
 
   return (
     <div className="artPage">
