@@ -281,7 +281,7 @@ section {
   #landingPage {
     .dreamerImg {
       img {
-        height: 70vh;
+        height: 72vh;
         animation: fadeInDown 0s;
       }
     }
@@ -291,6 +291,9 @@ section {
     .dreamerOS {
       flex-direction: row;
       margin-bottom: 0vh;
+      span {
+        margin: 0.3rem;
+      }
     }
   }
 

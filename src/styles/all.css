@@ -323,7 +323,7 @@ section {
 
 @media screen and (max-width: 1466px) {
   #landingPage .dreamerImg img {
-    height: 70vh;
+    height: 72vh;
     animation: fadeInDown 0s;
   }
   #landingPage .intro {
@@ -332,6 +332,9 @@ section {
   #landingPage .dreamerOS {
     flex-direction: row;
     margin-bottom: 0vh;
+  }
+  #landingPage .dreamerOS span {
+    margin: 0.3rem;
   }
   #feature .slide-effect .slideContainer .slideImg {
     flex: 4 1 580px;
@@ -626,6 +629,7 @@ section {
 }
 #BBRC .ivyGirl img {
   max-height: 82vh;
+  border-radius: 50%;
 }
 #BBRC .BBRCIntro {
   flex: 4 1;

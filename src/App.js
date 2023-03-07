@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
-import Page404 from "./pages/Page404";
 import PFP from "./pages/PFP";
 import Art from "./pages/Art";
 import Layout from "./Layout";
@@ -17,7 +16,6 @@ function App() {
           <Route index element={<Homepage />} />
           <Route path="pfp" element={<PFP />} />
           <Route path="art" element={<Art />} />
-          <Route path="*" element={<Page404 />} />
         </Route>
       </Routes>
     </BrowserRouter>
