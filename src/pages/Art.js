@@ -200,7 +200,7 @@ const Art = () => {
             systems, and has created video tutorials on art and design.
           </p>
           <a
-            href="https://opensea.io/assets/ethereum/0xa6bc325684b30ef17dd3f35f8708d5d11fd2955a/52"
+            href="https://opensea.io/assets/ethereum/0x62cdf590945a8e9559e257145df310eb82cd793b/1"
             target="_blank"
             rel="noreferrer noopener"
             ref={ref5}

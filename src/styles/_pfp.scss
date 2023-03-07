@@ -551,18 +551,21 @@
       }
     }
   }
-  .rengaPic {
+  .rengaWrap {
+    overflow: hidden;
     flex: 5 1;
     align-self: flex-start;
-    border-radius: 50%;
-    overflow: hidden;
     margin: 1rem 1rem 0rem 1rem;
-    aspect-ratio: 1/1;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top center;
+    .rengaPic {
+      border-radius: 50%;
+      overflow: hidden;
+      aspect-ratio: 1/1;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
     }
   }
 }
@@ -747,22 +750,25 @@
   #renga {
     .rengaIntro {
       padding: 1rem 3rem;
-      flex: 6 1 500px;
+      flex: 6 1 600px;
       justify-content: space-around;
       .rengaOS {
         align-self: flex-start;
         margin-top: 8vh;
       }
     }
-    .rengaPic {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      flex-wrap: wrap;
-      img {
-        width: 55%;
-        height: 55%;
-        border-radius: 50%;
+    .rengaWrap {
+      flex: 5 1 500px;
+      .rengaPic {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        img {
+          width: 55%;
+          height: 55%;
+          border-radius: 50%;
+        }
       }
     }
   }
@@ -1017,11 +1023,13 @@
         padding-right: 2rem;
       }
     }
-    .rengaPic {
-      img {
-        width: 75%;
-        height: 75%;
-        border-radius: 50%;
+    .rengaWrap {
+      .rengaPic {
+        img {
+          width: 75%;
+          height: 75%;
+          border-radius: 50%;
+        }
       }
     }
   }

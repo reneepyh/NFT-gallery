@@ -1031,15 +1031,18 @@ section {
 #renga .rengaIntro .rengaOS span {
   margin: 0.3rem;
 }
-#renga .rengaPic {
+#renga .rengaWrap {
+  overflow: hidden;
   flex: 5 1;
   align-self: flex-start;
+  margin: 1rem 1rem 0rem 1rem;
+}
+#renga .rengaWrap .rengaPic {
   border-radius: 50%;
   overflow: hidden;
-  margin: 1rem 1rem 0rem 1rem;
   aspect-ratio: 1/1;
 }
-#renga .rengaPic img {
+#renga .rengaWrap .rengaPic img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1210,20 +1213,23 @@ section {
   }
   #renga .rengaIntro {
     padding: 1rem 3rem;
-    flex: 6 1 500px;
+    flex: 6 1 600px;
     justify-content: space-around;
   }
   #renga .rengaIntro .rengaOS {
     align-self: flex-start;
     margin-top: 8vh;
   }
-  #renga .rengaPic {
+  #renga .rengaWrap {
+    flex: 5 1 500px;
+  }
+  #renga .rengaWrap .rengaPic {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
   }
-  #renga .rengaPic img {
+  #renga .rengaWrap .rengaPic img {
     width: 55%;
     height: 55%;
     border-radius: 50%;
@@ -1446,7 +1452,7 @@ section {
     font-size: 1rem;
     padding-right: 2rem;
   }
-  #renga .rengaPic img {
+  #renga .rengaWrap .rengaPic img {
     width: 75%;
     height: 75%;
     border-radius: 50%;
@@ -2096,7 +2102,7 @@ section {
   }
   #DR .drPic img {
     width: 60vw;
-    padding-top: 0rem;
+    padding-top: 1rem;
   }
   #DR .drIntro {
     padding: 0rem 1.5rem;
@@ -2128,7 +2134,7 @@ section {
   }
   #TAOS .seasons9623 img {
     width: 60vw;
-    padding-top: 0rem;
+    padding-top: 1rem;
   }
   #TAOS .seasons9415 {
     padding: 0rem;
@@ -2157,7 +2163,7 @@ section {
   }
   #lofiLoft .lofi895 img {
     width: 60vw;
-    padding-top: 0rem;
+    padding-top: 1rem;
   }
   #lofiLoft .lofi4652 {
     padding: 0rem;

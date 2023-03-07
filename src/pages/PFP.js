@@ -1212,15 +1212,24 @@ const PFP = () => {
             RENGA #9149
           </a>
         </div>
-        <div className="rengaPic">
-          <img
-            src="https://i.seadn.io/gcs/files/7b45531d1f75a2db3c2096131c610c5b.jpg?auto=format&w=1000"
-            alt="Renga"
+        <div className="rengaWrap">
+          <div
             ref={ref51}
             className={
-              inView51 ? "animate__animated animate__fadeInDown" : "hidden"
+              inView51
+                ? "rengaPic animate__animated animate__fadeInDown"
+                : "hidden"
             }
-          />
+          >
+            <img
+              src="https://i.seadn.io/gcs/files/7b45531d1f75a2db3c2096131c610c5b.jpg?auto=format&w=1000"
+              alt="Renga"
+              ref={ref51}
+              className={
+                inView51 ? "animate__animated animate__fadeInDown" : "hidden"
+              }
+            />
+          </div>
         </div>
       </div>
     </div>
