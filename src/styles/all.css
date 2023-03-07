@@ -2225,4 +2225,29 @@ section {
     font-size: 1rem;
     padding-right: 2rem;
   }
+}
+.page404 {
+  min-height: 100vh;
+}
+.page404 h2,
+.page404 h3 {
+  color: rgba(237, 176, 45, 0.752);
+  font-size: 3rem;
+  margin: 2rem 7rem;
+}
+.page404 p {
+  color: rgb(48, 46, 46);
+  font-size: 2rem;
+  margin: 5rem 7rem;
+}
+
+@media screen and (max-width: 660px) {
+  .page404 h2,
+  .page404 h3 {
+    font-size: 2rem;
+    margin: 2rem 2rem;
+  }
+  .page404 p {
+    margin: 5rem 2rem;
+  }
 }/*# sourceMappingURL=all.css.map */
