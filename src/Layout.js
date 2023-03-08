@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Footer from "./Footer";
 import { Outlet, NavLink, useLocation } from "react-router-dom";
 
@@ -19,9 +19,25 @@ const Layout = () => {
     }
   }, [location]);
 
+  const navRef = useRef(null);
+  useEffect(() => {
+    const nav = navRef.current;
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        nav.style.boxShadow = "";
+      } else {
+        nav.style.boxShadow = "0 5px 10px -10px #5b5b5b";
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
-      <nav style={{ backgroundColor: navBg }}>
+      <nav style={{ backgroundColor: navBg }} ref={navRef}>
         <ul>
           <li>
             <NavLink
