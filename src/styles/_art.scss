@@ -59,7 +59,7 @@
   .TAOSPic {
     flex: 3 1;
     img {
-      max-height: 92vh;
+      max-width: 32vw;
       border-radius: 30%;
       padding: 1rem 3rem 2rem 1rem;
     }
@@ -76,7 +76,7 @@
     flex: 3 1;
     padding: 1rem;
     img {
-      max-height: 85vh;
+      max-width: 39vw;
       border-radius: 30%;
       padding-top: 1.5rem;
     }
@@ -136,7 +136,7 @@
       }
     }
     .cohLink {
-      margin-top: 60vh;
+      margin-top: 61vh;
     }
   }
   .cohPic {
@@ -146,7 +146,7 @@
     flex-direction: column;
     align-items: flex-start;
     img {
-      max-height: 85vh;
+      max-width: 32vw;
       border-radius: 30%;
       padding-top: 1.5rem;
     }
@@ -167,13 +167,12 @@
     align-items: flex-end;
     justify-content: flex-start;
     img {
-      max-height: 85vh;
+      max-width: 33vw;
       border-radius: 30%;
       padding-top: 1.5rem;
     }
   }
   .drIntro {
-    min-height: 100vh;
     flex: 4 1;
     padding: 1rem 3rem;
     display: flex;
@@ -197,7 +196,7 @@
       }
     }
     .drOSLink {
-      margin-top: 35vh;
+      margin-top: 37vh;
     }
   }
 }
@@ -386,7 +385,7 @@
     flex-direction: column;
     align-items: flex-end;
     img {
-      max-height: 85vh;
+      max-width: 33vw;
       border-radius: 30%;
       padding-top: 1.5rem;
     }
@@ -414,7 +413,7 @@
       }
     }
     .mekLink {
-      margin-top: 56vh;
+      margin-top: 54vh;
     }
   }
 }
@@ -430,7 +429,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 38vw;
       }
     }
   }
@@ -443,7 +442,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 50vw;
       }
     }
     .dreamerIntro {
@@ -458,7 +457,7 @@
   #COH {
     .cohIntro {
       padding: 1rem 3rem;
-      flex: 1 1 500px;
+      flex: 1 1 550px;
       justify-content: space-around;
       .cohLink {
         align-self: flex-start;
@@ -471,7 +470,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 45vw;
       }
     }
   }
@@ -484,7 +483,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 45vw;
       }
     }
     .drIntro {
@@ -562,7 +561,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 45vw;
       }
     }
     .mekIntro {
@@ -606,7 +605,7 @@
     }
     .TAOSPic {
       img {
-        width: 60vw;
+        max-width: 60vw;
       }
     }
   }
@@ -617,7 +616,7 @@
     .dreamerPic {
       padding: 0rem;
       img {
-        width: 60vw;
+        max-width: 60vw;
         padding-top: 0rem;
       }
     }
@@ -650,7 +649,7 @@
     .cohPic {
       padding: 0rem;
       img {
-        width: 60vw;
+        max-width: 60vw;
         padding-top: 0rem;
       }
     }
@@ -662,7 +661,7 @@
     .drPic {
       padding: 0rem;
       img {
-        width: 60vw;
+        max-width: 60vw;
         padding-top: 1rem;
       }
     }
@@ -695,14 +694,14 @@
     .seasons9623 {
       padding: 0rem;
       img {
-        width: 60vw;
+        max-width: 60vw;
         padding-top: 1rem;
       }
     }
     .seasons9415 {
       padding: 0rem;
       img {
-        width: 60vw;
+        max-width: 60vw;
         padding-top: 1rem;
       }
     }
@@ -725,14 +724,14 @@
     .lofi895 {
       padding: 0rem;
       img {
-        width: 60vw;
+        max-width: 60vw;
         padding-top: 1rem;
       }
     }
     .lofi4652 {
       padding: 0rem;
       img {
-        width: 60vw;
+        max-width: 60vw;
         padding-top: 1rem;
       }
     }
@@ -772,7 +771,7 @@
     .mekPic {
       padding: 0rem 0rem 2rem 0rem;
       img {
-        width: 60vw;
+        max-width: 60vw;
         padding-top: 0rem;
       }
     }

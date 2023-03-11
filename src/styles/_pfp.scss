@@ -59,8 +59,7 @@
   .ivyPic {
     flex: 1 1;
     img {
-      max-height: 90vh;
-      max-width: 80vw;
+      max-width: 40vw;
     }
   }
 }
@@ -76,7 +75,7 @@
     flex: 3 1;
     padding: 1rem;
     img {
-      max-height: 78vh;
+      max-width: 37vw;
       border-radius: 50%;
     }
   }
@@ -104,7 +103,7 @@
       }
     }
     .kpkOS {
-      margin-top: 32vh;
+      margin-top: 31vh;
       span {
         margin: 0.3rem;
       }
@@ -144,7 +143,7 @@
     flex: 3 1;
     padding: 1rem;
     img {
-      max-height: 82vh;
+      max-width: 37vw;
       border-radius: 50%;
     }
   }
@@ -172,7 +171,7 @@
       }
     }
     .bbrcOS {
-      margin-top: 38vh;
+      margin-top: 36vh;
       span {
         margin: 0.3rem;
       }
@@ -222,7 +221,7 @@
     flex-wrap: wrap;
     align-items: center;
     img {
-      max-height: 80vh;
+      max-width: 37vw;
       border-radius: 50%;
     }
     a {
@@ -250,7 +249,7 @@
     flex: 3 1;
     padding: 1rem;
     img {
-      max-height: 75vh;
+      max-width: 37vw;
       border-radius: 50%;
     }
   }
@@ -282,7 +281,7 @@
       }
     }
     .bwLink {
-      margin-top: 35vh;
+      margin-top: 36vh;
       img {
         margin: 0.3rem;
       }
@@ -326,7 +325,7 @@
       }
     }
     .lucidOS {
-      margin-top: 47vh;
+      margin-top: 43vh;
       span {
         margin: 0.3rem;
       }
@@ -336,7 +335,7 @@
     flex: 1 1;
     padding: 1rem;
     img {
-      max-height: 80vh;
+      max-width: 37vw;
       border-radius: 50%;
     }
   }
@@ -353,7 +352,7 @@
     flex: 3 1;
     padding: 1rem;
     img {
-      max-height: 75vh;
+      max-width: 37vw;
       border-radius: 50%;
     }
   }
@@ -385,7 +384,7 @@
       }
     }
     .vividLink {
-      margin-top: 41vh;
+      margin-top: 46vh;
       span {
         margin: 0.3rem;
       }
@@ -429,7 +428,7 @@
       }
     }
     .catgirlOS {
-      margin-top: 42vh;
+      margin-top: 39vh;
       span {
         margin: 0.3rem;
       }
@@ -439,7 +438,7 @@
     flex: 1 1;
     padding: 1rem;
     img {
-      max-height: 80vh;
+      max-width: 37vw;
       border-radius: 50%;
     }
   }
@@ -460,7 +459,7 @@
     flex-wrap: wrap;
     align-items: center;
     img {
-      max-height: 80vh;
+      max-width: 37vw;
     }
     a {
       font-family: "IBM Plex Serif", serif;
@@ -546,7 +545,7 @@
       }
     }
     .rengaOS {
-      margin-top: 42vh;
+      margin-top: 44vh;
       span {
         margin: 0.3rem;
       }
@@ -582,7 +581,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 50vw;
       }
     }
   }
@@ -595,7 +594,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 50vw;
       }
     }
     .KPKIntro {
@@ -615,7 +614,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 50vw;
       }
     }
     .BBRCIntro {
@@ -639,7 +638,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 50vw;
       }
     }
   }
@@ -652,7 +651,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 50vw;
       }
     }
     .bwIntro {
@@ -680,7 +679,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 50vw;
       }
     }
   }
@@ -693,7 +692,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 50vw;
       }
     }
     .vividIntro {
@@ -721,7 +720,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 50vw;
       }
     }
   }
@@ -734,7 +733,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 50vw;
+        max-width: 50vw;
       }
     }
     .hkIntro {
@@ -809,7 +808,7 @@
       align-content: center;
       flex-wrap: wrap;
       img {
-        width: 60vw;
+        max-width: 60vw;
       }
     }
   }
@@ -819,7 +818,7 @@
     padding: 2rem 2rem 0rem 2rem;
     .KPKPiano {
       img {
-        width: 60vw;
+        max-width: 60vw;
       }
     }
     .KPKIntro {
@@ -859,7 +858,7 @@
     padding: 2rem 2rem 0rem 2rem;
     .ivyGirl {
       img {
-        width: 65vw;
+        max-width: 65vw;
       }
     }
     .BBRCIntro {
@@ -893,7 +892,7 @@
     }
     .wsPics {
       img {
-        width: 60vw;
+        max-width: 60vw;
       }
       .wsOS {
         padding: 0.2rem;
@@ -907,7 +906,7 @@
     padding: 2rem 2rem 0rem 2rem;
     .bw117 {
       img {
-        width: 60vw;
+        max-width: 60vw;
       }
     }
     .bwIntro {
@@ -938,7 +937,7 @@
     }
     .lucidPic {
       img {
-        width: 60vw;
+        max-width: 60vw;
       }
     }
   }
@@ -948,7 +947,7 @@
     padding: 2rem 2rem 0rem 2rem;
     .vividPic {
       img {
-        width: 60vw;
+        max-width: 60vw;
       }
     }
     .vividIntro {
@@ -979,7 +978,7 @@
     }
     .catgirlPic {
       img {
-        width: 60vw;
+        max-width: 60vw;
       }
     }
   }
@@ -989,7 +988,7 @@
     padding: 2rem 2rem 0rem 2rem;
     .hkPics {
       img {
-        width: 60vw;
+        max-width: 60vw;
       }
     }
     .hkIntro {
